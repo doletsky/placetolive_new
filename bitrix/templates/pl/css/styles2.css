@@ -1,0 +1,91 @@
+blockquote.alignright, blockquote.alignleft, .alignleft.img, .alignright.img {
+    width: 33%;
+}
+blockquote p{
+    font-size: 130%;
+    line-height: 180%;
+    /* font-style: oblique; */
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.full-width-image {
+    margin: 1em 0 1.6em;
+    overflow: hidden;
+}
+.full-width-image img {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.main-navigation.breadcrump, .main-navigation.breadcrump a {
+    color: grey;
+    font-size: 14px;
+    padding: 0;
+}
+
+.main-navigation.breadcrump ul {
+    position: relative;
+    top: -25px;
+    display: block;
+}
+
+.main-navigation.breadcrump a{
+    cursor: pointer;
+}
+
+.main-navigation.breadcrump a:after {
+    font-family: FontAwesome;
+    content: "\f105";
+    padding: 0 5px;
+}
+
+.search .col-1-1 {
+    margin: 10px 0;
+}
+
+.site-footer {
+    padding: 20px;
+}
+
+.site-footer ul li {
+    margin-bottom: 8px;
+    text-align: left;
+    font-size: 70%;
+}
+
+.site-footer ul li a {
+    color: darkgray;
+}
+
+.site-footer input {
+    font-size: 70%;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 3px 5px;
+    text-align: center;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+    blockquote.alignright, blockquote.alignleft, .alignleft.img, .alignright.img {
+        width: auto;
+    }
+    .project-box .project-content span h3{
+        position: relative;
+        z-index: 999999;
+        opacity: 1;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        /*text-shadow: 1px 1px 1px #000;*/
+    }
+    .project-content span {
+        vertical-align: top;
+    }
+    .col-1-4.bm {
+        float: left;
+        width: 50%;
+    }
+}
