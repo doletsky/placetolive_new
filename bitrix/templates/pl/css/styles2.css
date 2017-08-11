@@ -79,7 +79,9 @@ blockquote p{
 .parallax-mirror img {
     opacity: 0.8;
 }
-
+#mt-projects .col-1-2.mt-column-clear{
+    padding: 2px;
+}
 @media handheld, only screen and (max-width: 767px) {
     blockquote.alignright, blockquote.alignleft, .alignleft.img, .alignright.img {
         width: auto;

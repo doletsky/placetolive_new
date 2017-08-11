@@ -1,31 +1,5 @@
-<?
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Статьи");
-?>
-
-    <!-- BREADCRUMBS NAVIGATION -->
-
-<!--    <div class="breadcrumb clearfix bottom-50">-->
-<!--        <div class="alignleft"><a href="/">Главная</a><img src="/images/breadcr-dvdr.gif" alt=""><span>Статьи</span></div>-->
-<!---->
-<!---->
-<!--        --><?//$APPLICATION->IncludeComponent("bitrix:menu","sub_top_mede",Array(
-//                "ROOT_MENU_TYPE" => "top",
-//                "MAX_LEVEL" => "1",
-//                "CHILD_MENU_TYPE" => "top",
-//                "USE_EXT" => "Y",
-//                "DELAY" => "N",
-//                "ALLOW_MULTI_SELECT" => "Y",
-//                "MENU_CACHE_TYPE" => "N",
-//                "MENU_CACHE_TIME" => "3600",
-//                "MENU_CACHE_USE_GROUPS" => "Y",
-//                "MENU_CACHE_GET_VARS" => ""
-//            )
-//        );?>
-<!---->
-<!--    </div>-->
-
-<?$APPLICATION->IncludeComponent("bitrix:news.list","list_page_pl",Array(
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");?>
+<?$APPLICATION->IncludeComponent("bitrix:news.list","list_page_pl_ajax",Array(
         "DISPLAY_DATE" => "Y",
         "DISPLAY_NAME" => "Y",
         "DISPLAY_PICTURE" => "Y",
@@ -80,10 +54,3 @@ $APPLICATION->SetTitle("Статьи");
         "AJAX_OPTION_ADDITIONAL" => ""
     )
 );?>
-    <!-- 3 COLUMN PORTFOLIO -->
-
-
-
-
-
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
