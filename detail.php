@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("Title");
         <!-- POST WITH IMAGE -->
 
         <?
-        $APPLICATION->IncludeComponent("bitrix:news.detail","mede",Array(
+        $APPLICATION->IncludeComponent("bitrix:news.detail","pl",Array(
                 "DISPLAY_DATE" => "Y",
                 "DISPLAY_NAME" => "Y",
                 "DISPLAY_PICTURE" => "Y",

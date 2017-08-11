@@ -69,6 +69,16 @@ blockquote p{
     padding: 3px 5px;
     text-align: center;
 }
+.page-entry-header .entry-title {
+    font-weight: bolder;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+.parallax-mirror {
+    background-color: #000000;
+}
+.parallax-mirror img {
+    opacity: 0.8;
+}
 
 @media handheld, only screen and (max-width: 767px) {
     blockquote.alignright, blockquote.alignleft, .alignleft.img, .alignright.img {

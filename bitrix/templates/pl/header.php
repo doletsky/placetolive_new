@@ -107,6 +107,9 @@ IncludeTemplateLangFile(__FILE__);
 
     <div id="content" class="site-content">
 
+<?if($APPLICATION->GetCurPage()=='/'):?>
+<!--     begin for main page-->
+
 
         <section id="home-hero">
 
@@ -137,7 +140,26 @@ IncludeTemplateLangFile(__FILE__);
 
         </section>
 
+<!--        end for main page-->
+<?//else:?>
+<!--<!--        begin for detail page-->-->
+<!---->
+<!--        <header class="page-entry-header">-->
+<!--            <div class="grid grid-pad overflow">-->
+<!--                <div class="col-1-1">-->
+<!--                    <div class="animated fadeInUp delay">-->
+<!--                        <h1 class="entry-title">Page - Fullwidth</h1>                </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!---->
+<!--            <div class="page-bg-image" data-parallax="scroll" data-image-src="--><?//=SITE_TEMPLATE_PATH?><!--/images/project-5.jpg" data-z-index="1"></div>-->
+<!---->
+<!---->
+<!---->
+<!--        </header>-->
 
-
+<?endif?>
+<!--        end for detail page-->
 
 
