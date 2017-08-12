@@ -69,10 +69,11 @@ blockquote p{
     padding: 3px 5px;
     text-align: center;
 }
-.page-entry-header .entry-title {
+.page-entry-header .entry-title,.menu-item a {
     font-weight: bolder;
     text-shadow: 0.1em 0.1em 0.2em black;
 }
+
 .parallax-mirror {
     background-color: #000000;
 }

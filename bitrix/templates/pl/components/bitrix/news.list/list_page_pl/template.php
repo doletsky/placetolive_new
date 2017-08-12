@@ -7,17 +7,13 @@
     <div class="grid grid-pad overflow">
         <div class="col-1-1">
             <div class="animated fadeInUp delay">
-                <?if(strlen($arParams["PARENT_SECTION_CODE"])>0):?>
                 <h1 class="entry-title"><?=$arResult['SECTION']['PATH'][0]['NAME']?></h1>
-                <?else:?>
-                <h1 class="entry-title">Разделы</h1>
-                <?endif?>
             </div>
         </div>
     </div>
 
 
-    <div class="page-bg-image" data-parallax="scroll" data-image-src="<?=SITE_TEMPLATE_PATH?>/images/page-bg.jpg?<?echo time()?>" data-z-index="1"></div>
+    <div class="page-bg-image" data-parallax="scroll" data-image-src="<?=CFile::GetPath($arResult['SECTION']['PATH'][0]['DETAIL_PICTURE'])?>?<?=time()?>" data-z-index="1"></div>
 
 
 
@@ -30,15 +26,11 @@
             <div class="main-navigation breadcrump">
                 <ul>
                     <li><a href="#">Главная</a></li>
-                    <?if(strlen($arParams["PARENT_SECTION_CODE"])>0):?>
                     <li><?=$arResult['SECTION']['PATH'][0]['NAME']?></li>
-                    <?else:?>
-                    <li>Разделы</li>
-                    <?endif?>
                 </ul>
             </div>
 
-<!--<pre>--><?//print_r($arResult)?><!--</pre>-->
+<!--<pre>--><?//print_r($arResult['SECTION']['PATH'][0]['DETAIL_PICTURE'])?><!--</pre>-->
 
             <section id="mt-projects">
 
