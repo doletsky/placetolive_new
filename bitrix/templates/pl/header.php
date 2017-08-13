@@ -117,7 +117,7 @@ IncludeTemplateLangFile(__FILE__);
                 <div class="hero-content animated fadeInUp delay">
 
 
-                    <h2>Пространство для <em>жизни</em></h2>
+                    <h2>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ <em>пїЅпїЅпїЅпїЅпїЅ</em></h2>
 
 
 
@@ -127,7 +127,7 @@ IncludeTemplateLangFile(__FILE__);
 
 
                         <button>
-                            Смотреть                    </button>
+                            пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ                    </button>
 
 
                     </a>
