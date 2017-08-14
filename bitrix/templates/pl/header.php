@@ -30,6 +30,7 @@ IncludeTemplateLangFile(__FILE__);
     <style>
         #secondary > #mt-testimonials .testimonial p, .shortcodes .testimonial p  { font-style: italic; }
         .news-info > div { text-align: left; }
+        /*.bwWrapper { position:relative; display:block; }*/
     </style>
     <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 

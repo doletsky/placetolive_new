@@ -13,8 +13,8 @@
     </div>
 
 
-    <div class="page-bg-image" data-parallax="scroll" data-image-src="<?=CFile::GetPath($arResult['SECTION']['PATH'][0]['DETAIL_PICTURE'])?>?<?=time()?>" data-z-index="1"></div>
-
+<!--    <div class="page-bg-image" data-parallax="scroll" data-image-src="--><?//=CFile::GetPath($arResult['SECTION']['PATH'][0]['DETAIL_PICTURE'])?><!--?--><?//=time()?><!--" data-z-index="1"></div>-->
+    <img class="page-bg-image" data-parallax="scroll" src="<?=CFile::GetPath($arResult['SECTION']['PATH'][0]['DETAIL_PICTURE'])?>?<?=time()?>" data-z-index="1">
 
 
 </header><!-- .entry-header -->
