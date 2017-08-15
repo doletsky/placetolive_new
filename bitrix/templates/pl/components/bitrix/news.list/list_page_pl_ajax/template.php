@@ -11,7 +11,9 @@
 
 							<h3><?=$arItem["NAME"]?></h3>
 
-                        	<div class="project-bg" style="background-image: url(<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>);"></div>
+                        	<div class="project-bg">
+                                <img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>">
+                        	</div>
 
                         </span>
 

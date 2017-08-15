@@ -59,56 +59,30 @@
 
                     <article id="post-249" class="post-249 page type-page status-publish has-post-thumbnail hentry">
                         <div class="entry-content">
-                            <h4 style="text-align: center">Easily add projects with short codes.</h4>
-                            <p style="text-align: center;max-width: 600px;margin: 0 auto 40px">Use our Projects plugin to easily add projects and display them in sidebars, widgets, or anywhere with short codes!</p>
+                            <h4 style="text-align: center">Вам будет интересно:</h4>
+                            <p style="display:none;text-align: center;max-width: 600px;margin: 0 auto 40px">Use our Projects plugin to easily add projects and display them in sidebars, widgets, or anywhere with short codes!</p>
                             <section id="mt-projects">
 
                                 <div class="grid grid-pad">
 
+                                    <?foreach($arResult['RAND_ELEMENT'] as $k=>$el):?>
                                     <div class="col-1-3 mt-column-clear" style="padding: 5px">
                                         <div class="project-box">
-                                            <a href="/project/banana-republic/">
+                                            <a href="<?=$el["DETAIL_PAGE_URL"]?>">
                                                 <div class="project-content">
                                                     <div>
                                                 <span>
-                                                    <h3>Banana Republic</h3>
-                                                    <div class="project-bg" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/images/banana.jpg);"></div>
+                                                    <h3><?=$el["NAME"]?></h3>
+                                                    <div class="project-bg">
+                                                        <img src="<?=$el["PREVIEW_PICTURE"]?>" alt="<?=$el["NAME"]?>">
+                                                    </div>
                                                 </span>
                                                     </div>
                                                 </div>
                                             </a>
                                         </div>
                                     </div>
-
-                                    <div class="col-1-3 mt-column-clear" style="padding: 5px">
-                                        <div class="project-box">
-                                            <a href="/project/mercedes-benz/">
-                                                <div class="project-content">
-                                                    <div>
-                                                    <span>
-                                                        <h3>Mercedes Benz</h3>
-                                                        <div class="project-bg" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/images/general.jpg);"></div>
-                                                    </span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-1-3 mt-column-clear" style="padding: 5px">
-                                        <div class="project-box">
-                                            <a href="/project/burton/">
-                                                <div class="project-content">
-                                                    <div>
-                                                    <span>
-                                                        <h3>Burton</h3>
-                                                        <div class="project-bg" style="background-image: url(<?=SITE_TEMPLATE_PATH?>/images/burton.jpg);"></div>
-                                                    </span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <?endforeach?>
 
                                 </div>
                             </section>
@@ -145,5 +119,17 @@
         </div>
     </div>
 </section>
-
+<script>
+    $(document).ready(function(){
+        $(".project-bg img").each(function(){
+            console.log($(this).height());
+            console.log($(this).parent().height());
+            if($(this).parent().height()-$(this).height()>1){
+                console.log('chaging');
+                $(this).css('max-width','none');
+                $(this).css('max-height',$(this).parents('.project-content').height()+'px');
+            }
+        });
+    });
+</script>
 <!--<pre>--><?//print_r($arResult)?><!--</pre>-->

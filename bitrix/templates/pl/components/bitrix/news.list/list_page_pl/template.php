@@ -55,7 +55,9 @@
 
 							<h3><?=$arItem["NAME"]?></h3>
 
-                        	<div class="project-bg" style="background-image: url(<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>);"></div>
+                        	<div class="project-bg">
+                                <img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>">
+                        	</div>
 
                         </span>
 
@@ -89,6 +91,16 @@
 <script type="text/javascript">
     jQuery(function($){
         $(document).ready(function(){
+            $(".project-bg img").each(function(){
+                console.log($(this).height());
+                console.log($(this).parent().height());
+                if($(this).parent().height()-$(this).height()>1){
+                    console.log('chaging');
+                    $(this).css('max-width','none');
+                    $(this).css('max-height',$(this).parents('.project-content').height()+'px');
+                }
+            });
+
             var delay=false;
             var finContentTop=$('#fin-content').position().top;
             var pcount=$('#fin-content').attr('pcount');
@@ -108,11 +120,15 @@
                                function(data){
                                $(".col-1-2.mt-column-clear:last").after(data);
                                $(".col-1-2.mt-column-clear:hidden").slideDown(1000,function(){
-                                       console.log(delay);
-                                       console.log(pcurent);
                                        finContentTop=$('#fin-content').position().top;
                                        $('#fin-content').attr('pcurent', pcurent);
                                        delay=false;
+                                   $(".project-bg img").each(function(){
+                                       if($(this).parent().height()-$(this).height()>1){
+                                           $(this).css('max-width','none');
+                                           $(this).css('max-height',$(this).parents('.project-content').height()+'px');
+                                       }
+                                   });
                                    });
 
                            });

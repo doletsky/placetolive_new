@@ -25,7 +25,7 @@ $arFilter = Array(
     "!ID" => $arResult['ID']
 );
 //$arResult['RAND_ELEMENT']["FILTER"]=$arFilter;
-$res = CIBlockElement::GetList(Array("RAND"=>"ASC"), $arFilter, false, Array ("nTopCount" => 6));
+$res = CIBlockElement::GetList(Array("RAND"=>"ASC"), $arFilter, false, Array ("nTopCount" => 3));
 while($ar_fields = $res->GetNext())
 {
     $arResult['RAND_ELEMENT'][] = array("NAME" => $ar_fields["NAME"], "PREVIEW_PICTURE" => CFile::GetPath($ar_fields["PREVIEW_PICTURE"]), "DETAIL_PAGE_URL" => $ar_fields["DETAIL_PAGE_URL"]) ;
