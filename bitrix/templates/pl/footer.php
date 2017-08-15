@@ -21,10 +21,14 @@
                 <div style="margin-top: -9px">
                     Подписка на новые идеи
                 </div>
-                <form action="#">
-                    <input type="text" placeholder="Ваше имя"><br>
-                    <input type="email" required="required" placeholder="your@email.ru"><br>
+                <form action="/subscribe.php" method="post" target="_blank">
+                    <input type="text" placeholder="Ваше имя" name="name"><br>
+                    <input type="email" required="required" placeholder="your@email.ru" name="email"><br>
                     <input type="submit" value="Отправить" style="padding: 5px">
+                    <div class="private">
+                        <input type="checkbox" required="required" name="agree" value="y"><p>Я принимаю условия <a href="#">Пользовательского соглашения</a></p>
+                    </div>
+                    <input type="hidden" name="page" value="<?=$APPLICATION->GetCurPage()?>">
                 </form>
             </div>
         </div>

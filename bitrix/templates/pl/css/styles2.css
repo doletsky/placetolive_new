@@ -101,6 +101,21 @@ blockquote p{
     top: 3px;
 }
 
+.private p {
+    font-size: 80%;
+    line-height: 16px;
+    width: 79%;
+    margin: 0 30px;
+}
+
+.private input[type="checkbox"]{
+    position: relative;
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin: 6px 10px 5px 0;
+}
+
 /*-bugfix old ver-*/
 .entry-content img {
     margin: 20px;
