@@ -80,12 +80,32 @@ blockquote p{
 .parallax-mirror img {
     opacity: 0.8;
 }
-#mt-projects .col-1-2.mt-column-clear{
-    padding: 2px;
+#mt-projects .col-1-2.mt-column-clear:nth-child(2n+1){
+     padding:  25px 25px 25px 0;
+ }
+#mt-projects .col-1-2.mt-column-clear:nth-child(2n){
+    padding:  25px 0 25px 25px;
+}
+.search-page-pl .news-image {
+    width: 65%;
+}
+.search-page-pl .news-info {
+    width: 35%;
+}
+.search-page-pl .news-info p {
+    font-size: 80%;
+}
+.col-1-1 .search-page input[name="q"]{
+    position: relative;
+    width: 88%;
+    top: 3px;
 }
 @media handheld, only screen and (max-width: 767px) {
     blockquote.alignright, blockquote.alignleft, .alignleft.img, .alignright.img {
         width: auto;
+    }
+    #mt-projects .col-1-2.mt-column-clear:nth-child(2n+1), #mt-projects .col-1-2.mt-column-clear:nth-child(2n) {
+        padding: 0;
     }
     .project-box .project-content span h3{
         position: relative;
@@ -105,5 +125,8 @@ blockquote p{
     .col-1-4.bm {
         float: left;
         width: 50%;
+    }
+    .col-1-1 .search-page input[name="q"], .col-1-1 .search-page input{
+        width: 100%;
     }
 }

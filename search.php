@@ -3,9 +3,35 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Поиск");
 ?>
 
+    <header class="page-entry-header">
+        <div class="grid grid-pad overflow">
+            <div class="col-1-1">
+                <div class="animated fadeInUp delay">
+                    <h1 class="entry-title">Разделы</h1>
+                </div>
+            </div>
+        </div>
 
 
-<?$APPLICATION->IncludeComponent("bitrix:search.page","tags",Array(
+        <img class="page-bg-image" data-parallax="scroll" src="<?=SITE_TEMPLATE_PATH?>/images/page-bg.jpg?<?echo time()?>" data-z-index="1"></div>
+
+
+
+    </header><!-- .entry-header -->
+
+<div class="home-widget home-widget-one shortcodes"><a name="anonces"></a>
+
+    <div class="grid grid-pad">
+    <div class="col-1-1">
+    <div class="main-navigation breadcrump">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li>Разделы</li>
+        </ul>
+    </div>
+
+
+<?$APPLICATION->IncludeComponent("bitrix:search.page","pl",Array(
         "TAGS_SORT" => "NAME",
         "TAGS_PAGE_ELEMENTS" => "150",
         "TAGS_PERIOD" => "30",
@@ -52,12 +78,13 @@ $APPLICATION->SetTitle("Поиск");
     )
 );?>
 
-
+</div>
+    </div>
 
     <!-- SIDEBAR -->
 
 
-    <!--    </div>-->
+        </div>
 
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

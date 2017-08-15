@@ -116,21 +116,9 @@ IncludeTemplateLangFile(__FILE__);
 
             <div class="hero-content-container">
                 <div class="hero-content animated fadeInUp delay">
-
-
-                    <h2>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ <em>пїЅпїЅпїЅпїЅпїЅ</em></h2>
-
-
-
-
+                    <h2>Пространство для <em>жизни</em></h2>
                     <a href="anonces" class="featured-link" id="scroll_to_anonces">
-
-
-
-                        <button>
-                            пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ                    </button>
-
-
+                        <button>смотреть</button>
                     </a>
 
 
