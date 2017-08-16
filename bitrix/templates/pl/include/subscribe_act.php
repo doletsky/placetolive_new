@@ -14,7 +14,7 @@ $arFields = Array(
     "LOGIN"             => $_REQUEST['email'],
     "ACTIVE"            => "Y",
     "GROUP_ID"          => array($arGroup['ID']),
-    "ADMIN_NOTES"       => "Подписка оформлена на странице ".$_REQUEST['page'],
+    "ADMIN_NOTES"       => ConvertTimeStamp()." Подписка оформлена на странице ".$_REQUEST['page'],
     "PASSWORD"          => $tmpPass,
     "CONFIRM_PASSWORD"  => $tmpPass
 );
@@ -30,7 +30,7 @@ else{
         if($arUser["ACTIVE"]=="N"){
             $fields = Array(
                 "ACTIVE"            => "Y",
-                "ADMIN_NOTES"       => "Подписка активирована на странице ".$_REQUEST['page']
+                "ADMIN_NOTES"       => $arUser["ADMIN_NOTES"]."\n".ConvertTimeStamp()." Подписка активирована на странице ".$_REQUEST['page']
             );
             $user->Update($arUser["ID"], $fields);
             echo $user->LAST_ERROR;
