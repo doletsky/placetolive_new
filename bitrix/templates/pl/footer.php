@@ -21,7 +21,7 @@
                 <div style="margin-top: -9px">
                     Подписка на новые идеи
                 </div>
-                <form action="/subscribe.php" method="post" target="_blank">
+                <form id="subscribe" action="/subscribe.php" method="post" target="_blank">
                     <input type="text" placeholder="Ваше имя" name="name"><br>
                     <input type="email" required="required" placeholder="your@email.ru" name="email"><br>
                     <input type="submit" value="Отправить" style="padding: 5px">

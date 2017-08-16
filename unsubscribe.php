@@ -1,12 +1,12 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Подписка");
+$APPLICATION->SetTitle("Отписка");
 ?>
     <header class="page-entry-header">
         <div class="grid grid-pad overflow">
             <div class="col-1-1">
                 <div class="animated fadeInUp delay">
-                        <h1 class="entry-title">Подписка</h1>
+                        <h1 class="entry-title">Отписка</h1>
                 </div>
             </div>
         </div>
@@ -25,13 +25,14 @@ $APPLICATION->SetTitle("Подписка");
     <div class="main-navigation breadcrump">
         <ul>
             <li><a href="#">Главная</a></li>
-                <li>Подписка</li>
+                <li>Отписка</li>
         </ul>
     </div>
 
-<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/include/subscribe_act.php');?>
+<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/include/unsubscribe_act.php');?>
 <div>
-    <h3>Благодарим за подписку!</h3>
+    <p style="color: red">Вы успешно отписались от рассылки.</p>
+    <h3>Благодарим за то, что были с нами!<br>Ждем Вас на страницах нашего сайта <a href="http://placetolive.ru">http://placetolive.ru</a> </h3>
 </div>
 
 

@@ -20,8 +20,40 @@ $arFields = Array(
 );
 
 $ID = $user->Add($arFields);
-if (intval($ID) > 0)
-    echo "Пользователь успешно добавлен.";
+if (intval($ID) > 0){
+    echo "Вы успешно подписались. На указанный адрес отправлено подтверждение.";
+    /* получатели */
+    $to= $_REQUEST['email'];
+
+    /* тема/subject */
+    $subject = "Подписка на новые идеи";
+
+    /* сообщение */
+    $message = '
+<html>
+<head>
+ <title>Подписка на новые идеи"</title>
+</head>
+<body>
+<p>Здравствуйте!<br>
+Вы успешно подписались на новые идеи!<br>
+Мы благодарим Вас за то, что Вы с нами!<br>
+С уважением команда <a href="http://placetolive.ru">Place to Live!</a></p>
+<p><small>Что бы отписаться от рассылки нажмите <a href="http://'.$_SERVER['HTTP_HOST'].'/unsubscribe.php?email='.$_REQUEST['email'].'">Отписаться</a> </small></p>
+</body>
+</html>
+';
+
+    /* Для отправки HTML-почты вы можете установить шапку Content-type. */
+    $headers= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html; charset=windows-1251\r\n";
+
+    /* дополнительные шапки */
+    $headers .= "From: info@placetolive.ru\r\n";
+    /* и теперь отправим из */
+    mail($to, $subject, $message, $headers);
+}
+
 else{
     $errStr=$user->LAST_ERROR;
     if(substr_count($errStr, "уже существует")==1){
