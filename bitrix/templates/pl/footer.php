@@ -29,6 +29,7 @@
                         <input type="checkbox" required="required" name="agree" value="y"><p>я принимаю услови€ <a href="#">ѕользовательского соглашени€</a></p>
                     </div>
                     <input type="hidden" name="page" value="<?=$APPLICATION->GetCurPage()?>">
+                    <input type="hidden" name="ssid" value="<?=$_SESSION['fixed_session_id']?>">
                 </form>
             </div>
         </div>
