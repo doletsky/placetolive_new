@@ -13,8 +13,8 @@
     </div>
 
 
-<!--    <div class="page-bg-image" data-parallax="scroll" data-image-src="--><?//=CFile::GetPath($arResult['SECTION']['PATH'][0]['DETAIL_PICTURE'])?><!--?--><?//=time()?><!--" data-z-index="1"></div>-->
-    <img class="page-bg-image" data-parallax="scroll" src="<?=CFile::GetPath($arResult['SECTION']['PATH'][0]['DETAIL_PICTURE'])?>?<?=time()?>" data-z-index="1">
+    <div class="page-bg-image" data-parallax="scroll" data-image-src="<?=CFile::GetPath($arResult['SECTION']['PATH'][0]['DETAIL_PICTURE'])?>?<?=time()?>" data-z-index="1">
+    <img class="page-bg-image" data-parallax="scroll" src="<?=CFile::GetPath($arResult['SECTION']['PATH'][0]['DETAIL_PICTURE'])?>?<?=time()?>" data-z-index="1"></div>
 
 
 </header><!-- .entry-header -->
@@ -25,21 +25,13 @@
         <div class="col-1-1">
             <div class="main-navigation breadcrump">
                 <ul>
-                    <li><a href="#">Главная</a></li>
+                    <li><a href="/">Главная</a></li>
                     <li><?=$arResult['SECTION']['PATH'][0]['NAME']?></li>
                 </ul>
             </div>
 
-<!--<pre>--><?//print_r($arResult['SECTION']['PATH'][0]['DETAIL_PICTURE'])?><!--</pre>-->
 
             <section id="mt-projects">
-
-
-<!--                <div class="grid grid-pad">-->
-<!--                    <div class="col-1-1">-->
-<!--                        <h3 class="widget-title">Новые публикации</h3>-->
-<!--                    </div>-->
-<!--                </div>-->
 
 
 

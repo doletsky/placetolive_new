@@ -33,14 +33,53 @@ while($ar_fields = $res->GetNext())
 $arParams['TEST']="data in cash";
 
 //formating text
-$arResult["nDETAIL_TEXT"]=explode("\n", $arResult["DETAIL_TEXT"]);
-$arSearch=array('[h]','[/h]','[cc]','[/cc]','[cl]','[/cl]','[cr]','[/cr]');
-$arReplace=array('<h3>','</h3>','<blockquote class="fa fa-quote-left"><p>','</p></blockquote>','<blockquote class="fa fa-quote-left alignleft"><p>','</p></blockquote>','<blockquote class="fa fa-quote-left alignright"><p>','</p></blockquote>');
-$arTmp=array();
-foreach($arResult["nDETAIL_TEXT"] as $str){
-    if(strlen($str)>2){
-        $arTmp[]=array('str'=>str_replace($arSearch,$arReplace,$str),'len'=>strlen(trim($str,'\r')));
-
+if($arResult["ID"]>507){
+    $nDETAIL_TEXT=explode("\n", strip_tags($arResult["DETAIL_TEXT"]));
+    $arSearch=array(
+        '[h]',
+        '[/h]',
+        '[cc]',
+        '[/cc]',
+        '[cl]',
+        '[/cl]',
+        '[cr]',
+        '[/cr]',
+        '[line]',
+        '[/line]',
+        '[row]',
+        '[/row]',
+        '[imgl',
+        '[imgr',
+        '[imgc',
+        '[imgf'
+    );
+    $arReplace=array(
+        '<h3>',
+        '</h3>',
+        '<blockquote class="fa fa-quote-left"><p>',
+        '</p></blockquote>',
+        '<blockquote class="fa fa-quote-left alignleft"><p>',
+        '</p></blockquote>',
+        '<blockquote class="fa fa-quote-left alignright"><p>',
+        '</p></blockquote>',
+        '<div class="img-in-line">',
+        '</div>',
+        '<div class="img-in-row">',
+        '</div>',
+        '<div class="alignleft img"><img ',
+        '<div class="alignright img"><img ',
+        '<div class="aligncenter img"><img ',
+        '<div class="full-width-image"><img '
+    );
+    foreach($arResult['DISPLAY_PROPERTIES']['PHOTOS']['FILE_VALUE'] as $num=>$pPhoto){
+        $arSearch[]=1+$num.']';
+        $arReplace[]='src="'.$pPhoto['SRC'].'"></div>';
     }
+    $arTmp=array();
+    foreach($nDETAIL_TEXT as $str){
+        $tmpStr=str_replace($arSearch,$arReplace,$str,$cntRepl);
+        if($cntRepl==0)$tmpStr="<p>".$tmpStr."</p>";
+        $arTmp[]=$tmpStr;
+    }
+    $arResult["DETAIL_TEXT"]=implode($arTmp,'');
 }
-$arResult["nDETAIL_TEXT"]=$arTmp;

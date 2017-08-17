@@ -116,8 +116,27 @@ blockquote p{
     margin: 6px 10px 5px 0;
 }
 
+#recom img{
+    margin: 0 0 0 -1px;
+}
+.aligncenter.img {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.img-in-row .alignleft.img, .img-in-line .alignright.img {
+    width: 30%;
+}
+.img-in-line .alignleft {
+    margin-right: 0;
+}
+.img-in-line .alignright {
+    margin-left: 0;
+}
+.img-in-line, .img-in-row {
+    margin: 20px 0;
+}
 /*-bugfix old ver-*/
-.entry-content img {
+.entry-content p img {
     margin: 20px;
 }
 /*---------------*/
