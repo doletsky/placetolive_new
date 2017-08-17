@@ -116,7 +116,7 @@ IncludeTemplateLangFile(__FILE__);
 
             <div class="hero-content-container">
                 <div class="hero-content animated fadeInUp delay">
-                    <h2>Пространство для <em>жизни</em></h2>
+                    <h2 style="text-shadow: 0.1em 0.1em 0.2em black">Пространство для <em>жизни</em></h2>
                     <a href="anonces" class="featured-link" id="scroll_to_anonces">
                         <button>смотреть</button>
                     </a>
@@ -125,7 +125,8 @@ IncludeTemplateLangFile(__FILE__);
                 </div><!-- .hero-content -->
             </div><!-- .hero-content-container -->
 
-            <div id="hero-background" data-parallax="scroll" data-image-src="<?=SITE_TEMPLATE_PATH?>/images/hero-bg1.jpg" data-z-index="1" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/images/hero-bg1.jpg'); background-size: cover; background-position: center center;"></div>
+            <div id="hero-background" data-parallax="scroll" data-image-src="<?=SITE_TEMPLATE_PATH?>/images/mpl2-3.jpg" data-z-index="1" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/images/mpl2-3.jpg'); background-size: cover; background-position: center center;">
+            </div>
 
         </section>
 
