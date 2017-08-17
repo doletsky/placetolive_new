@@ -1,5 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 
+<pre><?print_r($arResult["nDETAIL_TEXT"])?></pre>
+
 <header class="page-entry-header">
     <div class="grid grid-pad overflow">
         <div class="col-1-1">
