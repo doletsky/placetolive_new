@@ -50,7 +50,6 @@
                     <article id="post-249" class="post-249 page type-page status-publish has-post-thumbnail hentry">
                         <div class="entry-content">
                             <h4 style="text-align: center">Вам будет интересно:</h4>
-                            <p style="display:none;text-align: center;max-width: 600px;margin: 0 auto 40px">Use our Projects plugin to easily add projects and display them in sidebars, widgets, or anywhere with short codes!</p>
                             <section id="mt-projects">
 
                                 <div class="grid grid-pad">
@@ -78,8 +77,6 @@
                             </section>
                         </div><!-- .entry-content -->
 
-                        <footer class="entry-footer">
-                        </footer><!-- .entry-footer -->
                     </article>
 
                     <div id="comments" class="comments-area" style="display: none">

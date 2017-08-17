@@ -1,7 +1,7 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
 <!--<pre>--><?//=print_r($arResult["SEARCH"])?><!--</pre>-->
 <div class="search-page">
-<form action="" method="get">
+<form action="/search.php" method="get">
 	<input type="text" name="q" value="<?=$arResult["REQUEST"]["QUERY"]?>" size="40"/>
 	&nbsp;<input type="submit" value="<?=GetMessage("SEARCH_GO")?>" />
 
