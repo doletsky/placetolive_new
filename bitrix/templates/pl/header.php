@@ -49,7 +49,7 @@ IncludeTemplateLangFile(__FILE__);
 
                     <a href="/" title="Place to Live" rel="home">
 
-                        Place to Live
+                        PL
                     </a>
 
                 </h1>
@@ -116,7 +116,11 @@ IncludeTemplateLangFile(__FILE__);
 
             <div class="hero-content-container">
                 <div class="hero-content animated fadeInUp delay">
-                    <h2 style="text-shadow: 0.1em 0.1em 0.2em black">Пространство для <em>жизни</em></h2>
+                    <h2 style="text-shadow: 0.1em 0.1em 0.2em black;/* text-transform: uppercase; */padding-bottom: 15px;"><em style="
+    /* font-size: 90px; */
+    line-height: 150px;
+">Place to Live</em><br>Вдохновение. Красота. Индивидуальность.</h2>
+<!--                    <h2 style="text-shadow: 0.1em 0.1em 0.2em black">Пространство для <em>жизни</em></h2>-->
                     <a href="anonces" class="featured-link" id="scroll_to_anonces">
                         <button>смотреть</button>
                     </a>

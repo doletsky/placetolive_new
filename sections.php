@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Статьи");
+$APPLICATION->SetTitle("Разделы");
 ?>
     <header class="page-entry-header">
         <div class="grid grid-pad overflow">
@@ -12,8 +12,8 @@ $APPLICATION->SetTitle("Статьи");
         </div>
 
 
-        <div class="page-bg-image" data-parallax="scroll" data-image-src="<?=SITE_TEMPLATE_PATH?>/images/page-bg.jpg?<?echo time()?>" data-z-index="1">
-            <img class="page-bg-image" data-parallax="scroll" src="<?=SITE_TEMPLATE_PATH?>/images/page-bg.jpg?<?echo time()?>" data-z-index="1">
+        <div class="page-bg-image" data-parallax="scroll" data-image-src="<?=SITE_TEMPLATE_PATH?>/images/sections.jpg?<?echo time()?>" data-z-index="1">
+            <img class="page-bg-image" data-parallax="scroll" src="<?=SITE_TEMPLATE_PATH?>/images/sections.jpg?<?echo time()?>" data-z-index="1">
         </div>
 
 
@@ -26,7 +26,7 @@ $APPLICATION->SetTitle("Статьи");
     <div class="col-1-1">
     <div class="main-navigation breadcrump">
         <ul>
-            <li><a href="#">Главная</a></li>
+            <li><a href="/">Главная</a></li>
                 <li>Разделы</li>
         </ul>
     </div>
