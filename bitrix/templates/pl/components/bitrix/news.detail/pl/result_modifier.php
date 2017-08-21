@@ -51,7 +51,9 @@ if($arResult["ID"]>507){
         '[imgl',
         '[imgr',
         '[imgc',
-        '[imgf'
+        '[imgf',
+        '[b]',
+        '[/b]'
     );
     $arReplace=array(
         '<h3>',
@@ -69,7 +71,9 @@ if($arResult["ID"]>507){
         '<div class="alignleft img"><img ',
         '<div class="alignright img"><img ',
         '<div class="aligncenter img"><img ',
-        '<div class="full-width-image"><img '
+        '<div class="full-width-image"><img ',
+        '<em style="font-weight: bold">',
+        '</em>'
     );
     foreach($arResult['DISPLAY_PROPERTIES']['PHOTOS']['FILE_VALUE'] as $num=>$pPhoto){
         $arSearch[]='_'.(1+$num).']';

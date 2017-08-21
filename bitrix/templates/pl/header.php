@@ -47,7 +47,7 @@ IncludeTemplateLangFile(__FILE__);
             <hgroup>
                 <h1 class="site-title">
 
-                    <a href="/" title="Place to Live" rel="home">
+                    <a href="/" title="Place to Live" rel="home" style="font-family: 'Gunny Rewritten'">
                         PL<div class="sub-title">design</div>
                     </a>
 
@@ -115,10 +115,7 @@ IncludeTemplateLangFile(__FILE__);
 
             <div class="hero-content-container">
                 <div class="hero-content animated fadeInUp delay">
-                    <h2 style="text-shadow: 0.1em 0.1em 0.2em black;/* text-transform: uppercase; */padding-bottom: 15px;"><em style="
-    /* font-size: 90px; */
-    line-height: 150px;
-">Place to Live</em><br>Вдохновение. Красота. Индивидуальность.</h2>
+                    <h2><em>Place to Live</em><br>Вдохновение. Красота. Индивидуальность.</h2>
 <!--                    <h2 style="text-shadow: 0.1em 0.1em 0.2em black">Пространство для <em>жизни</em></h2>-->
                     <a href="anonces" class="featured-link" id="scroll_to_anonces">
                         <button>смотреть</button>
@@ -128,7 +125,7 @@ IncludeTemplateLangFile(__FILE__);
                 </div><!-- .hero-content -->
             </div><!-- .hero-content-container -->
 
-            <div id="hero-background" data-parallax="scroll" data-image-src="<?=SITE_TEMPLATE_PATH?>/images/mpl2-3.jpg" data-z-index="1" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/images/mpl2-3.jpg'); background-size: cover; background-position: center center;">
+            <div id="hero-background" data-parallax="scroll" data-image-src="<?=SITE_TEMPLATE_PATH?>/images/mpl2-3.jpg" data-z-index="1" style="background-image: url('<?=SITE_TEMPLATE_PATH?>/images/mpl2-3.jpg'); background-size: cover; background-position: center center;opacity: 0.8;">
             </div>
 
         </section>

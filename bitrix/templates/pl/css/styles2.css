@@ -1,4 +1,15 @@
+@import "//fonts.fontstorage.com/import/gunnyrewritten.css";
 h1,h2,h3,h4,h5,h6{font-family:Times New Roman,serif,sans-serif;}
+.hero-content h2{
+    font-size:60px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    padding-bottom: 15px;
+    font-family: 'Gunny Rewritten';
+}
+.hero-content h2 em{
+    line-height: 80px;
+    font-size: 90px;
+}
 blockquote.alignright, blockquote.alignleft, .alignleft.img, .alignright.img {
     width: 33%;
 }
@@ -160,6 +171,9 @@ blockquote p{
 /*---------------*/
 
 @media handheld, only screen and (max-width: 767px) {
+    .hero-content h2{
+        font-size:26px;
+    }
     blockquote.alignright, blockquote.alignleft, .alignleft.img, .alignright.img {
         width: auto;
     }
