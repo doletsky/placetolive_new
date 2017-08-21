@@ -25,7 +25,7 @@ $APPLICATION->SetTitle("Поиск");
     <div class="col-1-1">
     <div class="main-navigation breadcrump">
         <ul>
-            <li><a href="#">Главная</a></li>
+            <li><a href="/">Главная</a></li>
             <li>Поиск</li>
         </ul>
     </div>
