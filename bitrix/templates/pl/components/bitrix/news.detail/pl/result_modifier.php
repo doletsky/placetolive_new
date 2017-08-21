@@ -72,8 +72,11 @@ if($arResult["ID"]>507){
         '<div class="full-width-image"><img '
     );
     foreach($arResult['DISPLAY_PROPERTIES']['PHOTOS']['FILE_VALUE'] as $num=>$pPhoto){
-        $arSearch[]=1+$num.']';
-        $arReplace[]='src="'.$pPhoto['SRC'].'"></div>';
+        $arSearch[]='_'.(1+$num).']';
+        if(strlen($pPhoto['DESCRIPTION'])>2)
+        $arReplace[]='src="'.$pPhoto['SRC'].'" alt="'.$pPhoto['DESCRIPTION'].'"><div class="subtitle-img">'.$pPhoto['DESCRIPTION'].'</div></div>';
+        else
+            $arReplace[]='src="'.$pPhoto['SRC'].'" alt="'.$arResult['NAME'].'"></div>';
     }
     $arTmp=array();
     foreach($nDETAIL_TEXT as $str){

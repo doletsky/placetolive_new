@@ -14,6 +14,7 @@ blockquote p{
 .full-width-image {
     margin: 1em 0 1.6em;
     overflow: hidden;
+    clear: both;
 }
 .full-width-image img {
     overflow: hidden;
@@ -120,9 +121,15 @@ blockquote p{
 #recom img{
     margin: 0 0 0 -1px;
 }
-.aligncenter.img {
+.img {
     margin-bottom: 20px;
+}
+.aligncenter.img {
     text-align: center;
+}
+.subtitle-img{
+    font-style: italic;
+    font-size: 80%;
 }
 .img-in-row .alignleft.img, .img-in-line .alignright.img {
     width: 30%;

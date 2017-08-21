@@ -1,6 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-
-<!--<pre>--><?//print_r($arResult)?><!--</pre>-->
+<?//if($USER->GetID()==1):?>
+<!--<pre>--><?//print_r($arResult['DISPLAY_PROPERTIES']['PHOTOS'])?><!--</pre>-->
+<?//endif?>
 
 <header class="page-entry-header">
     <div class="grid grid-pad overflow">
@@ -122,6 +123,11 @@
                 $(this).css('min-height',$(this).children('img').height()+'px');
             });
             }, 300);
+        setTimeout(function(){
+            $('.full-width-image').each(function(){
+                $(this).css('min-height',$(this).children('img').height()+'px');
+            });
+        }, 15000);
 
     });
 
