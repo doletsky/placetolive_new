@@ -27,9 +27,8 @@
                 <main id="main" class="site-main" role="main">
                     <div class="main-navigation breadcrump">
                         <ul>
-                            <li><a href="#">Главная</a></li>
+                            <li><a href="/">Главная</a></li>
                             <li><a href="<?=$arResult['SECTION_URL']?>"><?=$arResult['SECTION']['PATH'][0]['NAME']?></a></li>
-                            <li><?$APPLICATION->ShowTitle()?></li>
                         </ul>
                     </div>
 
