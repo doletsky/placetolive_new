@@ -4,7 +4,7 @@
     <ul id="menu-primary-menu" class="menu">
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item current_page_item">
             <a href="/">Главная</a></li>
-        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="/list.php">Разделы</a></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="/sections.php">Разделы</a></li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/search.php">Найти</a></li>
     </ul>
 </div>

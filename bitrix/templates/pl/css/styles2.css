@@ -136,6 +136,16 @@ blockquote p{
 .img-in-line, .img-in-row {
     margin: 20px 0;
 }
+.site-title a, .site-title {
+    font-style: normal;
+}
+.sub-title {
+    position: relative;
+    font-size: 33%;
+    top: -70px;
+    letter-spacing: 0.2em;
+}
+
 /*-bugfix old ver-*/
 .entry-content p img {
     margin: 20px;

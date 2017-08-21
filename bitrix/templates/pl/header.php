@@ -48,8 +48,7 @@ IncludeTemplateLangFile(__FILE__);
                 <h1 class="site-title">
 
                     <a href="/" title="Place to Live" rel="home">
-
-                        PL
+                        PL<div class="sub-title">design</div>
                     </a>
 
                 </h1>
