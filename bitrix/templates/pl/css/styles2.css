@@ -163,7 +163,17 @@ blockquote p{
     top: -70px;
     letter-spacing: 0.2em;
 }
-
+.about-text p{
+    margin-bottom: 0;
+}
+.about-text p:first-child::first-letter{
+    font-size: 3em; /* Размер буквы */
+    color: red; /* Цвет буквы */
+    float: left; /* Выравнивание по левому краю */
+    margin: 0 4px 2px 0; /* Отступы вокруг буквы */
+    font-family: 'Gunny Rewritten';
+    top: -5px;
+}
 /*-bugfix old ver-*/
 .entry-content p img {
     margin: 20px;

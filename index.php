@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Место, в котором мы живем");
 ?>
     <div class="home-widget home-widget-one shortcodes"><a name="anonces"></a>
-        <div class="grid grid-pad">
+        <div class="grid grid-pad about-text">
             <div class="col-1-1" style="text-align: left">
                 <p>Вы цените красоту, готовитесь к ремонту квартиры и хотите, чтобы итог этого трудоемкого процесса радовал глаз и вызывал исключительно положительные эмоции?</p>
                 <p>Этот сайт создан для вашего вдохновения.</p>
@@ -12,6 +12,7 @@ $APPLICATION->SetTitle("Место, в котором мы живем");
                 <p>Place to Live – проект, созданный для вдохновения, с любовью к красоте и уважением к индивидуальности.</p>
             </div>
         </div>
+
 
         <div class="grid grid-pad">
             <div class="col-1-1">
