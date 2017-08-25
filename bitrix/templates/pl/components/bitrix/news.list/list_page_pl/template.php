@@ -29,6 +29,7 @@
                     <li><?=$arResult['SECTION']['PATH'][0]['NAME']?></li>
                 </ul>
             </div>
+            <div></div>
             <p style="text-align: left"><?=$arResult['SECTION']['PATH'][0]['DESCRIPTION']?></p>
 
             <section id="mt-projects">

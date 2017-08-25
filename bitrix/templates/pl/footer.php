@@ -37,7 +37,7 @@
             <hgroup>
                 <h1 class="site-title">
 
-                    <a href="/proper-lite/" title="Place to Live" rel="home" style="text-transform: none">
+                    <a href="/" title="Place to Live" rel="home" style="text-transform: none">
 
                         Place to Live
                     </a>
@@ -48,26 +48,27 @@
             <ul class="social-media-icons">
 
                 <li>
-                    <a href="https://www.facebook.com/PlacetoLive.Disign/" target="_blank">
+                    <a href="https://www.facebook.com/PlacetoLive.Design/" target="_blank">
                         <i class="fa fa-facebook"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://vk.com/placetolive.disign" target="_blank">
+                    <a href="https://vk.com/placetolive.design" target="_blank">
                         <i class="fa fa-vk"></i>
                     </a>
                 </li>
+<!--                <li>-->
+<!--                    <a href="http://instagram.com/placetolive.design" target="_blank">-->
+<!--                        <i class="fa fa-instagram"></i>-->
+<!--                    </a>-->
+<!--                </li>-->
                 <!--<li>-->
                 <!--<a href="http://twitter.com/" target="_blank">-->
                 <!--<i class="fa fa-twitter"></i>-->
                 <!--</a>-->
                 <!--</li>-->
-                <!--<li>-->
-                <!--<a href="http://instagram.com/" target="_blank">-->
-                <!--<i class="fa fa-instagram"></i>-->
-                <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
+
+<!--                <li>-->
                 <!--<a href="http://snapchat.com/" target="_blank">-->
                 <!--<i class="fa fa-snapchat-ghost"></i> -->
                 <!--</a>-->
