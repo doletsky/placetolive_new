@@ -163,6 +163,29 @@ blockquote p{
     top: -70px;
     letter-spacing: 0.2em;
 }
+.about-text {
+    position: relative;
+}
+.about-text div p {
+    margin-bottom: 0;
+}
+.first-letter {
+    font-size: 60px;
+    color: red;
+    float: left;
+    font-family: 'Gunny Rewritten';
+    position: relative;
+    margin: -18px 3px;
+    height: 70px;
+}
+
+.social {
+    float: right;
+    margin-bottom: 70px;
+}
+.social * {
+    margin-right: 10px;
+}
 
 /*-bugfix old ver-*/
 .entry-content p img {

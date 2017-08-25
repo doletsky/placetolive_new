@@ -9,9 +9,9 @@ IncludeTemplateLangFile(__FILE__);
     <?$APPLICATION->ShowHead();?>
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 <!--    <meta name="yandex-verification" content="6183942b3fb1d3f5" />-->
-<!--    <meta property="og:url" content="http://placetolive.ru--><?//=$APPLICATION->GetCurDir();?><!--" />-->
-<!--    <meta property="og:type" content="article" />-->
-<!--    <meta property="og:title" content="--><?//$APPLICATION->ShowTitle()?><!--" />-->
+    <meta property="og:url" content="http://<?=$_SERVER['SERVER_NAME']?><?=$APPLICATION->GetCurDir();?>" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="<?$APPLICATION->ShowTitle()?>" />
 
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
     <meta name="viewport" content="width=device-width, initial-scale=1">
