@@ -1,4 +1,5 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+$APPLICATION->SetTitle($arResult['SECTION']['PATH'][0]['NAME']);?>
 
 
 
@@ -29,8 +30,8 @@
                     <li><?=$arResult['SECTION']['PATH'][0]['NAME']?></li>
                 </ul>
             </div>
-            <div></div>
-            <p style="text-align: left"><?=$arResult['SECTION']['PATH'][0]['DESCRIPTION']?></p>
+            <div class="first-letter"><?=$arResult['SECTION']['PATH'][0]['DESCRIPTION']{0}?></div>
+            <p style="text-align: left"><?=substr($arResult['SECTION']['PATH'][0]['DESCRIPTION'],1)?></p>
 
             <section id="mt-projects">
 

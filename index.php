@@ -1,11 +1,11 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Место, в котором мы живем");
+$APPLICATION->SetTitle("Вдохновение. Красота. Индивидуальность.");
 ?>
     <div class="home-widget home-widget-one shortcodes"><a name="anonces"></a>
         <div class="grid grid-pad about-text">
             <div class="col-1-1" style="text-align: left">
-                <p>Вы цените красоту, готовитесь к ремонту квартиры и хотите, чтобы итог этого трудоемкого процесса радовал глаз и вызывал исключительно положительные эмоции?</p>
+                <p><div class="first-letter">В</div>ы цените красоту, готовитесь к ремонту квартиры и хотите, чтобы итог этого трудоемкого процесса радовал глаз и вызывал исключительно положительные эмоции?</p>
                 <p>Этот сайт создан для вашего вдохновения.</p>
                 <p>Здесь вы найдете статьи о том, как создать современный интерьер своими руками, в каком стиле оформить дом, как гармонично сочетать цвета и как грамотно организовать пространство для комфортной жизни.</p>
                 <p>Мы поделимся с Вами своими идеями для того, чтобы вы могли наслаждаться результатом.</p>
@@ -76,70 +76,6 @@ $APPLICATION->SetTitle("Место, в котором мы живем");
             </div>
         </div>
     </div><!-- .home-widget -->
-
-
-
-
-<!--    <div class="home-widget home-widget-two shortcodes">-->
-<!--        <div class="grid grid-pad">-->
-<!--            <div class="col-1-1">-->
-<!--                <h3 class="widget-title">Интервью</h3>-->
-<!---->
-<!--                <section id="home-news" class="home-news-area">-->
-<!---->
-<!--                    <div class="grid grid-pad">-->
-<!---->
-<!---->
-<!--                        <div class="col-1-1">-->
-<!---->
-<!--                            <div class="news-box">-->
-<!--                                <div class="news-content">-->
-<!--                                    <div>-->
-<!--                                        <a href="/proper-lite/blog_post.html"><div class="news-image" style="background-image: url(--><?//=SITE_TEMPLATE_PATH?><!--/images/stock1.jpg);"></div></a>-->
-<!---->
-<!---->
-<!---->
-<!--                                        <div class="news-info" style="width:25%;">-->
-<!---->
-<!--                                            <div>-->
-<!--                                                <a href="/proper-lite/blog_post.html">-->
-<!--                                                    <h3>A free collection of stock images you can use anywhere.</h3></a>-->
-<!--                                                <h6>April 8, 2015</h6>-->
-<!--                                                <a href="/proper-lite/blog_post.html">View More</a>-->
-<!--                                            </div>-->
-<!---->
-<!---->
-<!--                                        </div>-->
-<!---->
-<!---->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!---->
-<!--                        </div><!-- col -->
-<!---->
-<!---->
-<!--                    </div><!-- grid -->
-<!---->
-<!---->
-<!---->
-<!--                    <a href="/proper-lite/blog.html" class="all-news">-->
-<!--                        <button>See All</button>-->
-<!--                    </a>-->
-<!---->
-<!---->
-<!---->
-<!---->
-<!--                </section>-->
-<!---->
-<!---->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div><!-- .home-widget -->
-
-
-
-
 
 
     </div><!-- #content -->
