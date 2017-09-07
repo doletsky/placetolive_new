@@ -8,7 +8,7 @@ IncludeTemplateLangFile(__FILE__);
 	<title><?$APPLICATION->ShowTitle()?></title>
     <?$APPLICATION->ShowHead();?>
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-<!--    <meta name="yandex-verification" content="6183942b3fb1d3f5" />-->
+    <meta name="yandex-verification" content="6183942b3fb1d3f5" />
     <meta property="og:url" content="http://<?=$_SERVER['SERVER_NAME']?><?=$APPLICATION->GetCurDir();?>" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="<?$APPLICATION->ShowTitle()?>" />
@@ -21,7 +21,7 @@ IncludeTemplateLangFile(__FILE__);
     <link rel="stylesheet" id="proper-lite-style-group-css" href="<?=SITE_TEMPLATE_PATH?>/css/styles1.css" type="text/css" media="all">
     <link rel="stylesheet" id="proper-lite-open-headings-css" href="<?=SITE_TEMPLATE_PATH?>/css/css.css" type="text/css" media="all">
     <link rel="stylesheet" id="proper-lite-open-body-css" href="<?=SITE_TEMPLATE_PATH?>/css/css.css" type="text/css" media="all">
-    <link rel="stylesheet" id="sccss_style-css" href="<?=SITE_TEMPLATE_PATH?>/css/styles2.css?<?echo time();?>" type="text/css" media="all">
+    <link rel="stylesheet" id="sccss_style-css" href="<?=SITE_TEMPLATE_PATH?>/css/styles2.css" type="text/css" media="all">
     <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jquery-migrate-3.0.0.js"></script>
     <!--[if lt IE 9]>
