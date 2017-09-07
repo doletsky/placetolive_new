@@ -3,6 +3,9 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Title");
 ?>
         <!-- POST WITH IMAGE -->
+<?//if(in_array("1", $USER->GetUserGroupArray())){
+//    ?><!--<pre>--><?//print_r($_REQUEST)?><!--</pre>--><?//
+//die();}?>
 
         <?
         $APPLICATION->IncludeComponent("bitrix:news.detail","pl",Array(
