@@ -1,23 +1,18 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<?//if($USER->GetID()==1):?>
-<!--<pre>--><?//print_r($arResult['DISPLAY_PROPERTIES']['PHOTOS'])?><!--</pre>-->
-<?//endif?>
+<?if($USER->GetID()==1):?>
+<pre><?print_r($arResult)?></pre>
+<?endif?>
 
 <header class="page-entry-header">
     <div class="grid grid-pad overflow">
         <div class="col-1-1">
             <div class="animated fadeInUp delay">
-                <h1 class="entry-title"><?$APPLICATION->ShowTitle()?></h1>                </div>
+                <h1 class="entry-title"><?$APPLICATION->ShowTitle()?></h1>
+            </div>
         </div>
     </div>
-
-
     <div class="page-bg-image" data-parallax="scroll" data-image-src="<?=$arResult['PREVIEW_PICTURE']['SRC']?>" data-z-index="1">
-        <img class="page-bg-image" data-parallax="scroll"  src="<?=$arResult['PREVIEW_PICTURE']['SRC']?>" data-z-index="1">
     </div>
-
-
-
 </header><!-- .entry-header -->
 
 <section id="page-content-container" class="animated fadeIn delay-2">
@@ -119,7 +114,6 @@
                 $(this).children('.subtitle-img').css('text-align','center');
             });
         }, 15000);
-
     });
 
 </script>

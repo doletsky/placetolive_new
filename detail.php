@@ -16,7 +16,7 @@ $APPLICATION->SetTitle("Title");
                 "SHARE_HANDLERS" => array("delicious"),
                 "SHARE_SHORTEN_URL_LOGIN" => "",
                 "SHARE_SHORTEN_URL_KEY" => "",
-                "AJAX_MODE" => "Y",
+                "AJAX_MODE" => "N",
                 "IBLOCK_TYPE" => "news",
                 "IBLOCK_ID" => "34",
                 "ELEMENT_ID" => "",
@@ -52,12 +52,13 @@ $APPLICATION->SetTitle("Title");
                 "PAGER_SHOW_ALL" => "Y",
                 "PAGER_BASE_LINK_ENABLE" => "Y",
                 "SHOW_404" => "Y",
+                "FILE_404" => "/404.php",
                 "MESSAGE_404" => "",
                 "STRICT_SECTION_CHECK" => "Y",
                 "PAGER_BASE_LINK" => "",
                 "PAGER_PARAMS_NAME" => "arrPager",
                 "AJAX_OPTION_JUMP" => "N",
-                "AJAX_OPTION_STYLE" => "Y",
+                "AJAX_OPTION_STYLE" => "N",
                 "AJAX_OPTION_HISTORY" => "N"
             )
         );

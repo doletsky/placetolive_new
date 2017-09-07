@@ -22,7 +22,8 @@ CModule::IncludeModule("iblock");
 $arSec=end($arResult['SECTION']);
 $arFilter = Array(
     "IBLOCK_ID"=>$arSec[0]["IBLOCK_ID"],
-    "!ID" => $arResult['ID']
+    "!ID" => $arResult['ID'],
+    "ACTIVE" => "Y"
 );
 //$arResult['RAND_ELEMENT']["FILTER"]=$arFilter;
 $res = CIBlockElement::GetList(Array("RAND"=>"ASC"), $arFilter, false, Array ("nTopCount" => 3));
