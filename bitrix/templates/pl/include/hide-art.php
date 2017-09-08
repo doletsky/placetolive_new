@@ -171,6 +171,22 @@ if($ar_fields = $res->GetNext())
                     $(this).children('.subtitle-img').css('margin-top',imgHeight+'px');
                     $(this).children('.subtitle-img').css('text-align','center');
                 });
+            }, 1000);
+            setTimeout(function(){
+                $('.full-width-image').each(function(){
+                    var imgHeight=$(this).children('img').height();
+                    $(this).css('min-height',imgHeight+'px');
+                    $(this).children('.subtitle-img').css('margin-top',imgHeight+'px');
+                    $(this).children('.subtitle-img').css('text-align','center');
+                });
+            }, 5000);
+            setTimeout(function(){
+                $('.full-width-image').each(function(){
+                    var imgHeight=$(this).children('img').height();
+                    $(this).css('min-height',imgHeight+'px');
+                    $(this).children('.subtitle-img').css('margin-top',imgHeight+'px');
+                    $(this).children('.subtitle-img').css('text-align','center');
+                });
             }, 15000);
         });
 

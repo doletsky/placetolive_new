@@ -26,7 +26,7 @@
                     <input type="email" required="required" placeholder="your@email.ru" name="email"><br>
                     <input type="submit" value="ќтправить" style="padding: 5px">
                     <div class="private">
-                        <input type="checkbox" required="required" name="agree" value="y"><p>я принимаю услови€ <a href="#">ѕользовательского соглашени€</a></p>
+                        <input type="checkbox" required="required" name="agree" value="y"><p>я принимаю услови€ <a href="/polytic.pdf" target="_blank">ѕользовательского соглашени€ </a> и даю согласие на обработку персональных данных</p>
                     </div>
                     <input type="hidden" name="page" value="<?=$APPLICATION->GetCurPage()?>">
                     <input type="hidden" name="ssid" value="<?=$_SESSION['fixed_session_id']?>">
