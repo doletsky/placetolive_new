@@ -1,19 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 global $APPLICATION;
 
-$cp = $this->__component; // объект компонента
 
-if (is_object($cp))
-{
-    // добавим в arResult компонента два поля - MY_TITLE и IS_OBJECT
-    $cp->arResult['og_image'] = 'http://'.$_SERVER['SERVER_NAME'].$arResult['PREVIEW_PICTURE']['SRC'];
-    $cp->arResult['og_description'] = str_replace(array("\r", "\n"), "",TruncateText(strip_tags($arResult['DETAIL_TEXT']),300));
-    $cp->SetResultCacheKeys(array('og_image','og_description'));
-    // сохраним их в копии arResult, с которой работает шаблон
-    $arResult['og_image'] = $cp->arResult['og_image'];
-    $arResult['og_description'] = $cp->arResult['og_description'];
-
-}
 //string tags in array
 $arTags=explode(",",$arResult["TAGS"]);
 $arResult["arTAGS"]=$arTags;
@@ -94,4 +82,17 @@ if($arResult["ID"]>507){
         $arTmp[]=$tmpStr;
     }
     $arResult["DETAIL_TEXT"]=implode($arTmp,'');
+}
+$cp = $this->__component; // объект компонента
+
+if (is_object($cp))
+{
+    // добавим в arResult компонента два поля - MY_TITLE и IS_OBJECT
+    $cp->arResult['og_image'] = 'http://'.$_SERVER['SERVER_NAME'].$arResult['PREVIEW_PICTURE']['SRC'];
+    $cp->arResult['og_description'] = str_replace(array("\r", "\n"), "",TruncateText(strip_tags($arResult['DETAIL_TEXT']),300));
+    $cp->SetResultCacheKeys(array('og_image','og_description'));
+    // сохраним их в копии arResult, с которой работает шаблон
+    $arResult['og_image'] = $cp->arResult['og_image'];
+    $arResult['og_description'] = $cp->arResult['og_description'];
+
 }

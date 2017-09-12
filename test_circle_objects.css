@@ -1,0 +1,40 @@
+/*triods*/
+.triod {
+    height: 0;
+    width: 0;
+    position: absolute;
+    transform-origin: 50% 100px;
+    transition: transform 0.3s linear;
+    display: none;
+}
+.triod.active {
+    display: block;
+}
+
+.triod41{
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 180px solid grey;
+    left: 50px;
+}
+.triod33 {
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+    border-bottom: 150px solid grey;
+    left: 15px;
+}
+.triod17 {
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+    border-bottom: 57px solid grey;
+    left: 15px;
+}
+
+.check_gamma {
+    position: absolute;
+    top: 620px;
+    left: 300px;
+}
+/*.check_gamma input {*/
+    /*float: left;*/
+/*}*/
