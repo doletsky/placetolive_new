@@ -2,7 +2,8 @@
 
 CModule::IncludeModule("iblock");
 $arFilter = Array(
-    "IBLOCK_CODE"=>'articles'
+    "IBLOCK_CODE"=>'articles',
+    "ACTIVE"=>"Y"
 );
 $res = CIBlockElement::GetList(Array("RAND"=>"ASC"), $arFilter, false, Array ("nTopCount" => 3));
 while($ar_fields = $res->GetNext())
