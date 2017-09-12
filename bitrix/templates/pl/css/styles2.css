@@ -187,6 +187,19 @@ blockquote p{
     margin-right: 10px;
 }
 
+div.list {
+    margin-bottom: 1.5em;
+}
+
+div.list p {
+    margin-bottom: 0.5em;
+}
+
+div.list p:before {
+    content:"\2022";
+    margin-right: 10px;
+}
+
 /*-bugfix old ver-*/
 .entry-content p img {
     margin: 20px;

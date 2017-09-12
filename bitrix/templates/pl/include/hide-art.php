@@ -54,7 +54,9 @@ if($ar_fields = $res->GetNext())
             '[imgc',
             '[imgf',
             '[b]',
-            '[/b]'
+            '[/b]',
+            '[ls]',
+            '[/ls]'
         );
         $arReplace=array(
             '<h3>',
@@ -74,7 +76,9 @@ if($ar_fields = $res->GetNext())
             '<div class="aligncenter img"><img ',
             '<div class="full-width-image"><img ',
             '<em style="font-weight: bold">',
-            '</em>'
+            '</em>',
+            '<div class="list">',
+            '</div>'
         );
         foreach($ar_fields['PHOTOS'] as $num=>$pPhoto){
             $arSearch[]='_'.(1+$num).']';
