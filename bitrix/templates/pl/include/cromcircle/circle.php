@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link href="test_circle_color.css" type="text/css" rel="stylesheet" />
-    <link href="test_circle_objects.css" type="text/css" rel="stylesheet"/>
-    <script src="js/jquery-1.7.1.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-    <script src="test_circle.js">
 
-    </script>
-</head>
-<body>
 <div class="circle">
     <div class="container">
         <div class="sector"></div>
@@ -103,9 +92,9 @@
     <input id="rotColor3" type="button" value="ROTATE">
 </div>
 <div class="check_gamma">
-        <input name="triod_ch" type="radio" id="triod41" checked="checked" data-k="1.05">Р Р°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёР№
-        <input name="triod_ch" type="radio" id="triod33" data-k="0.52">Р Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№
-    <input name="triod_ch" type="radio" id="triod17" data-k="-1.05">РќСЊСЋР°РЅСЃ
+        <input name="triod_ch" type="radio" id="triod41" checked="checked" data-k="1.05">Равносторонний
+        <input name="triod_ch" type="radio" id="triod33" data-k="0.52">Равнобедренный
+    <input name="triod_ch" type="radio" id="triod17" data-k="-1.05">Ньюанс
 </div>
 
 <div id="imgColor">
@@ -130,7 +119,5 @@
 </div>
 
 
-</body>
-</html>
 
 
