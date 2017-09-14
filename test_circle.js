@@ -154,41 +154,23 @@ $(document).ready(function() {
 
             //position other points
             posCoPoints();
-//            var tmpX=kG/tg+1;
-//            var tmpY=kG-1/tg;
-//            var tg2=tmpY/tmpX;
-//
-//            posCoPoint(x, y, r, tg, tg2, "#dragP2", '#colorP2');
-//
-//            var tmpX=kG/tg-1;
-//            var tmpY=kG+1/tg;
-//            var tg2=tmpY/tmpX;
-//
-//            posCoPoint(x, y, r, tg, tg2, "#dragP3", '#colorP3');
+
+            colorInImg();
 
         }
     });
 
-    /*canvas*/
-//    var elem = document.getElementById('myCanvas');
-//    var context = elem.getContext('2d');
-//    // Создаем объект изображения
-//    var img = new Image();
-//
-//// Привязываем функцию к событию onload
-//// Это указывает браузеру, что делать, когда изображение загружено
-//    img.onload = function() {
-//        context.drawImage(img, 0, 0, 300, 150);
-//        myImage = context.getImageData(0, 0, 50, 50);
-//        for (var i = 0; i < 50*50*4; i += 4) {
-//            myImage.data[i] = 160;
-//            myImage.data[i + 1] = 19;
-//            myImage.data[i + 2] = 142;
-//        }
-//        context.putImageData(myImage, 0, 0);
-//    };
-//
-//// Загружаем файл изображения
-//    img.src = "./bitrix/templates/pl/images/cImg.jpg";
+    function colorInImg(){
+        var cColor=$('#colorP1').css('background-color');
+        var sColor=$('#colorP2').css('background-color');
+        var tColor=$('#colorP3').css('background-color');
+        $('.p-background').css('background-color', cColor);
+        $('.s-background').css('background-color', sColor);
+        $('.t-background').css('background-color', tColor);
+        $('.p-border').css('border-color', cColor);
+        $('.s-border').css('border-color', sColor);
+        $('.t-border').css('border-color', tColor);
+    }
+
 
 });

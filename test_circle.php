@@ -107,23 +107,23 @@
 
 <div id="imgColor">
 <img src="bitrix/templates/pl/images/examPalitra3.png">
-    <div class="p1"></div>
-    <div class="p2"></div>
-    <div class="p3"></div>
-    <div class="p4"></div>
-    <div class="p5"></div>
-    <div class="p6"></div>
-    <div class="p7"></div>
-    <div class="s1"></div>
-    <div class="s2"></div>
-    <div class="s3"></div>
-    <div class="s4"></div>
-    <div class="t1"></div>
-    <div class="t2"></div>
-    <div class="t3"></div>
-    <div class="t4"></div>
-    <div class="t5"></div>
-    <div class="t6"></div>
+    <div class="p1 p-border"></div>
+    <div class="p2 p-border"></div>
+    <div class="p3 p-border"></div>
+    <div class="p4 p-border"></div>
+    <div class="p5 p-background"></div>
+    <div class="p6 p-background"></div>
+    <div class="p7 p-background"></div>
+    <div class="s1 s-border"></div>
+    <div class="s2 s-background"></div>
+    <div class="s3 s-border"></div>
+    <div class="s4 s-background"></div>
+    <div class="t1 t-background"></div>
+    <div class="t2 t-background"></div>
+    <div class="t3 t-border"></div>
+    <div class="t4 t-background"></div>
+    <div class="t5 t-background"></div>
+    <div class="t6 t-border"></div>
 </div>
 
 
