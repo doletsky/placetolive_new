@@ -103,9 +103,9 @@
     <input id="rotColor3" type="button" value="ROTATE">
 </div>
 <div class="check_gamma">
-        <input name="triod_ch" type="radio" id="triod41" checked="checked" data-k="1.05">Р Р°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёР№
-        <input name="triod_ch" type="radio" id="triod33" data-k="0.52">Р Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№
-    <input name="triod_ch" type="radio" id="triod17" data-k="-1.05">РќСЊСЋР°РЅСЃ
+        <input name="triod_ch" type="radio" id="triod41" checked="checked" data-k="1.05">Равнобедренный
+        <input name="triod_ch" type="radio" id="triod33" data-k="0.52">Равносторонний
+    <input name="triod_ch" type="radio" id="triod17" data-k="-1.05">Ньюанс
 </div>
 
 <div id="imgColor">
