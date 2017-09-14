@@ -102,8 +102,30 @@
 <div class="check_gamma">
         <input name="triod_ch" type="radio" id="triod41" checked="checked" data-k="1.05">triod41
         <input name="triod_ch" type="radio" id="triod33" data-k="0.52">triod33
-    <input name="triod_ch" type="radio" id="triod17" data-k="-0.52">triod17
+    <input name="triod_ch" type="radio" id="triod17" data-k="-1.05">triod17
 </div>
+
+<div id="imgColor">
+<img src="bitrix/templates/pl/images/examPalitra3.png">
+    <div class="p1"></div>
+    <div class="p2"></div>
+    <div class="p3"></div>
+    <div class="p4"></div>
+    <div class="p5"></div>
+    <div class="p6"></div>
+    <div class="p7"></div>
+    <div class="s1"></div>
+    <div class="s2"></div>
+    <div class="s3"></div>
+    <div class="s4"></div>
+    <div class="t1"></div>
+    <div class="t2"></div>
+    <div class="t3"></div>
+    <div class="t4"></div>
+    <div class="t5"></div>
+    <div class="t6"></div>
+</div>
+
 
 </body>
 </html>

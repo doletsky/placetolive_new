@@ -168,4 +168,27 @@ $(document).ready(function() {
 
         }
     });
+
+    /*canvas*/
+//    var elem = document.getElementById('myCanvas');
+//    var context = elem.getContext('2d');
+//    // Создаем объект изображения
+//    var img = new Image();
+//
+//// Привязываем функцию к событию onload
+//// Это указывает браузеру, что делать, когда изображение загружено
+//    img.onload = function() {
+//        context.drawImage(img, 0, 0, 300, 150);
+//        myImage = context.getImageData(0, 0, 50, 50);
+//        for (var i = 0; i < 50*50*4; i += 4) {
+//            myImage.data[i] = 160;
+//            myImage.data[i + 1] = 19;
+//            myImage.data[i + 2] = 142;
+//        }
+//        context.putImageData(myImage, 0, 0);
+//    };
+//
+//// Загружаем файл изображения
+//    img.src = "./bitrix/templates/pl/images/cImg.jpg";
+
 });

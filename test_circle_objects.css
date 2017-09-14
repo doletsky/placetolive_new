@@ -38,3 +38,193 @@
 /*.check_gamma input {*/
     /*float: left;*/
 /*}*/
+
+#imgColor {
+    position: relative;
+    overflow: hidden;
+    width: 840px;
+    height: 550px;
+}
+#imgColor img {
+    position: absolute;
+    height: 550px;
+    width: auto;
+    /*opacity: 0.6;*/
+    z-index: 999;
+}
+#imgColor .p1 {
+    width: 0;
+    height: 280px;
+    border-left: 130px solid rgb(168, 58, 163);
+    border-top: 11px solid transparent;
+    border-bottom: 3px solid transparent;
+    position: absolute;
+    z-index: 99;
+    top: 27px;
+}
+#imgColor .p2 {
+    width: 0;
+    height: 240px;
+    border-right: 130px solid rgb(168, 58, 163);
+    border-top: 11px solid transparent;
+    border-bottom: 3px solid transparent;
+    position: absolute;
+    z-index: 99;
+    top: 90px;
+    left: 730px;
+}
+#imgColor .p3 {
+    width: 0;
+    height: 200px;
+    border-left: 50px solid rgb(168, 58, 163);
+    border-top: 11px solid transparent;
+    border-bottom: 3px solid transparent;
+    position: absolute;
+    z-index: 99;
+    top: 127px;
+    left: 390px;
+}
+#imgColor .p4 {
+    width: 0;
+    height: 141px;
+    border-right: 90px solid rgb(168, 58, 163);
+    border-top: 11px solid transparent;
+    border-bottom: 3px solid transparent;
+    position: absolute;
+    z-index: 99;
+    top: 119px;
+    left: 470px;
+}
+#imgColor .p5 {
+    position: absolute;
+    z-index: 99;
+    top: 376px;
+    left: 76px;
+    width: 478px;
+    height: 159px;
+    background-color: rgb(168, 58, 163);
+    transform: rotate(-12deg);
+}
+#imgColor .p6 {
+    width: 20px;
+    height: 27px;
+    background-color: rgb(168, 58, 163);
+    position: absolute;
+    z-index: 996;
+    top: 297px;
+    left: 211px;
+    transform: rotate(-10deg);
+}
+#imgColor .p7 {
+    width: 16px;
+    height: 16px;
+    background-color: rgb(168, 58, 163);
+    position: absolute;
+    z-index: 996;
+    top: 279px;
+    left: 481px;
+    transform: skew(-15deg);
+}
+/*rgb(50, 183, 108)*/
+#imgColor .s1 {
+    width: 0;
+    height: 64px;
+    border-left: 306px solid rgb(50, 183, 108);
+    border-top: 1px solid transparent;
+    border-bottom: 69px solid transparent;
+    position: absolute;
+    z-index: 990;
+    top: 290px;
+    left: 80px;
+}
+#imgColor .s2 {
+    width: 20px;
+    height: 50px;
+    background-color: rgb(50, 183, 108);
+    position: absolute;
+    z-index: 990;
+    top: 300px;
+    left: 373px;
+}
+#imgColor .s3 {
+    width: 0;
+    height: 79px;
+    border-right: 276px solid rgb(50, 183, 108);
+    border-top: 1px solid transparent;
+    border-bottom: 37px solid transparent;
+    position: absolute;
+    z-index: 990;
+    top: 270px;
+    left: 440px;
+}
+#imgColor .s4 {
+    width: 20px;
+    height: 60px;
+    background-color: rgb(50, 183, 108);
+    position: absolute;
+    z-index: 990;
+    top: 295px;
+    left: 424px;
+    border-radius: 8px;
+}
+#imgColor .t1 {
+    width: 27px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 244, 50);
+    position: absolute;
+    z-index: 995;
+    top: 372px;
+    left: 484px;
+}
+#imgColor .t2 {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(255, 244, 50);
+    position: absolute;
+    z-index: 995;
+    top: 375px;
+    left: 514px;
+}
+#imgColor .t3 {
+    width: 34px;
+    height: 0;
+    border-top: 37px solid rgb(255, 244, 50);
+    border-left: 12px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    z-index: 995;
+    top: 281px;
+    left: 122px;
+}
+#imgColor .t4 {
+    width: 166px;
+    height: 48px;
+    background-color: rgb(255, 244, 50);
+    position: absolute;
+    z-index: 995;
+    top: 272px;
+    left: 167px;
+    transform: rotate(-8deg);
+}
+#imgColor .t5 {
+    width: 183px;
+    height: 37px;
+    background-color: rgb(255, 244, 50);
+    position: absolute;
+    z-index: 995;
+    top: 273px;
+    left: 476px;
+    transform: rotate(3deg);
+}
+#imgColor .t6 {
+    width: 34px;
+    height: 0;
+    border-top: 37px solid rgb(255, 244, 50);
+    border-left: 12px solid transparent;
+    border-right: 16px solid transparent;
+    position: absolute;
+    z-index: 995;
+    top: 270px;
+    left: 625px;
+}
