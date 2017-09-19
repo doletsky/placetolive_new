@@ -154,6 +154,9 @@ blockquote p{
 .img-in-line, .img-in-row {
     margin: 20px 0;
 }
+.site-title {
+    font-size: xx-large;
+}
 .site-title a, .site-title {
     font-style: normal;
 }

@@ -93,13 +93,13 @@ IncludeTemplateLangFile(__FILE__);
 
 
             <hgroup>
-                <h1 class="site-title">
+                <div class="site-title">
 
                     <a href="/" title="Place to Live" rel="home" style="font-family: 'Gunny Rewritten'">
                         PL<div class="sub-title">design</div>
                     </a>
 
-                </h1>
+                </div>
             </hgroup>
 
 
