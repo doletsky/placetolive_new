@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-
+if(substr_count($_SERVER["REQUEST_URI"],"?CODE=")>0) LocalRedirect($APPLICATION->GetCurDir(), true, "301 Moved permanently");
+if(empty($_REQUEST) || array_key_exists('PAGEN_1', $_REQUEST)) LocalRedirect("/sections.php", true, "301 Moved permanently");
 ?>
 
     <!-- BREADCRUMBS NAVIGATION -->
