@@ -6,7 +6,7 @@ IncludeTemplateLangFile(__FILE__);
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
 	<title><?$APPLICATION->ShowTitle()?></title>
-    <?$APPLICATION->ShowHead();?>
+
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="yandex-verification" content="6183942b3fb1d3f5" />
     <meta property="og:url" content="http://<?=$_SERVER['SERVER_NAME']?><?=$APPLICATION->GetCurDir();?>" />
@@ -22,10 +22,15 @@ IncludeTemplateLangFile(__FILE__);
     <link rel="stylesheet" id="proper-lite-open-headings-css" href="<?=SITE_TEMPLATE_PATH?>/css/css.css" type="text/css" media="all">
     <link rel="stylesheet" id="proper-lite-open-body-css" href="<?=SITE_TEMPLATE_PATH?>/css/css.css" type="text/css" media="all">
     <link rel="stylesheet" id="sccss_style-css" href="<?=SITE_TEMPLATE_PATH?>/css/styles2.css" type="text/css" media="all">
-    <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jquery-migrate-3.0.0.js"></script>
+<!--    <script type="text/javascript" src="--><?//=SITE_TEMPLATE_PATH?><!--/js/jquery-3.2.1.min.js"></script>-->
+<!--    <script type="text/javascript" src="--><?//=SITE_TEMPLATE_PATH?><!--/js/jquery-migrate-3.0.0.js"></script>-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.ui.touch-punch.min.js"></script>
+    <?$APPLICATION->ShowHead();?>
     <!--[if lt IE 9]>
     <script src="<?=SITE_TEMPLATE_PATH?>/js/html5shiv.js"></script>
+
     <![endif]-->
     <style>
         #secondary > #mt-testimonials .testimonial p, .shortcodes .testimonial p  { font-style: italic; }
@@ -36,8 +41,9 @@ IncludeTemplateLangFile(__FILE__);
 
     <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jscripts.js"></script>
     <script type="text/javascript" async="" src="<?=SITE_TEMPLATE_PATH?>/css/styles3.css"></script>
+    <?if (!$USER->IsAdmin()):?>
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
+    <script type="text/javascript" >
         (function (d, w, c) {
             (w[c] = w[c] || []).push(function() {
                 try {
@@ -45,7 +51,8 @@ IncludeTemplateLangFile(__FILE__);
                         id:44799454,
                         clickmap:true,
                         trackLinks:true,
-                        accurateTrackBounce:true
+                        accurateTrackBounce:true,
+                        webvisor:true
                     });
                 } catch(e) { }
             });
@@ -74,6 +81,7 @@ IncludeTemplateLangFile(__FILE__);
         ga('send', 'pageview');
 
     </script>
+    <?endif;?>
 </head>
 
 <body class="home page-template page-template-template-home page-template-template-home-php page page-id-352">
