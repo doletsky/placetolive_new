@@ -203,6 +203,10 @@ div.list p:before {
     margin-right: 10px;
 }
 
+div.entry-content a {
+    color: #2a92d0;
+}
+
 /*-bugfix old ver-*/
 .entry-content p img {
     margin: 20px;
