@@ -1,5 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+if(substr_count($_SERVER["REQUEST_URI"],"?")>0) LocalRedirect($APPLICATION->GetCurDir(), true, "301 Moved permanently");
 //$APPLICATION->SetTitle("Title");
 ?>
         <!-- POST WITH IMAGE -->
