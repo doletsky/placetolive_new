@@ -207,6 +207,15 @@ div.entry-content a {
     color: #2a92d0;
 }
 
+.social-fx {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0.7;
+    background: rgba(255, 255, 255, 0.5);
+}
+
 /*-bugfix old ver-*/
 .entry-content p img {
     margin: 20px;
