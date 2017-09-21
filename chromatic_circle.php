@@ -1,5 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+require_once($_SERVER["DOCUMENT_ROOT"].SITE_TEMPLATE_PATH."/include/Mobile_Detect.php");
 $APPLICATION->SetTitle("Хроматический круг");
 ?>
     <header class="page-entry-header">
@@ -29,22 +30,20 @@ $APPLICATION->SetTitle("Хроматический круг");
     <article id="post-25" class="post-25 page type-page status-publish has-post-thumbnail hentry">
     <div class="entry-content">
 <?if(in_array("1", $USER->GetUserGroupArray())){
-    $APPLICATION->AddHeadScript("http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js");
-    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/cromcircle/circle.js");
-    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_color.css");
-    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_objects.css");
-    $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/cromcircle/circle.php");
+    $detect = new Mobile_Detect;
+//    if( $detect->isMobile() || $detect->isTablet() ){
+//        echo "Эта страница пока не адаптирована под мобильные экраны";
+//    }else{
+        $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/cromcircle/circle.js");
+        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_color.css");
+        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_objects.css");
+        $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/cromcircle/circle.php");
+//    }
+
 }?>
     </div>
         <!-- .entry-content -->
 
-        <div class="social">
-            <span>Поделиться статьей: </span>
-            <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://<?=$_SERVER['SERVER_NAME']?><?=$APPLICATION->GetCurPage()?>">
-                <i class="fa fa-facebook"></i> </a>
-            <a target="_blank" href="https://vk.com/share.php?url=http://<?=$_SERVER['SERVER_NAME']?>/<?=$APPLICATION->GetCurPage()?>" >
-                <i class="fa fa-vk"></i> </a>
-        </div>
     </article>
     </main><!-- #main -->
     </div><!-- #primary -->

@@ -42,14 +42,12 @@
 #imgColor {
     position: relative;
     overflow: hidden;
-    width: 840px;
-    height: 550px;
+    width: 100%;
 }
 #imgColor img {
-    position: absolute;
-    height: 550px;
-    width: auto;
-    /*opacity: 0.6;*/
+    position: relative;
+    height: auto;
+    width: 100%;
     z-index: 999;
 }
 #imgColor .p-border {
@@ -60,14 +58,14 @@
 }
 #imgColor .p1 {
     width: 0;
-    height: 280px;
-    border-left-width: 130px;
+    height: 50%;
+    border-left-width: 7.5vw;
     border-left-style: solid;
-    border-top: 11px solid transparent;
-    border-bottom: 3px solid transparent;
+    border-top: 1vw solid transparent;
+    border-bottom: 0.3vw solid transparent;
     position: absolute;
     z-index: 99;
-    top: 27px;
+    top: 10%;
 }
 #imgColor .p2 {
     width: 0;
@@ -141,15 +139,15 @@
 }
 #imgColor .s1 {
     width: 0;
-    height: 64px;
+    height: 24%;
     border-left-width: 306px;
     border-left-style: solid;
     border-top: 1px solid transparent;
     border-bottom: 69px solid transparent;
     position: absolute;
     z-index: 990;
-    top: 290px;
-    left: 80px;
+    top: 53%;
+    left: 9%;
 }
 #imgColor .s2 {
     width: 20px;
@@ -216,12 +214,12 @@
     left: 122px;
 }
 #imgColor .t4 {
-    width: 166px;
-    height: 48px;
+    width: 19%;
+    height: 9.3%;
     position: absolute;
     z-index: 995;
-    top: 272px;
-    left: 167px;
+    top: 49%;
+    left: 19%;
     transform: rotate(-8deg);
 }
 #imgColor .t5 {
@@ -257,3 +255,13 @@
     left: 80px;
     top: 125px;
 }
+
+/*@media handheld, only screen and (max-width: 767px) {*/
+    /*.full-width-circle *{*/
+        /*display: none;*/
+    /*}*/
+    /*.full-width-circle:before {*/
+        /*content: "Эта страница пока не адаптирована под мобильные экраны";*/
+        /*position: relative;*/
+    /*}*/
+/*}*/

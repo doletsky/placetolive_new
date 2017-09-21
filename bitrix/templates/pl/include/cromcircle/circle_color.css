@@ -1,8 +1,15 @@
+.full-width-circle {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    /*min-height: 660px;*/
+    margin: 0;
+}
+
 .circle{
-    width: 700px;
     height: 700px;
     position: relative;
-    float: left;
 }
 .colorPBox{
     margin: 20px;
