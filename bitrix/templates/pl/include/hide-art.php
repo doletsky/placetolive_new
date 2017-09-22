@@ -13,7 +13,8 @@ $arSelect = array(
     "DETAIL_PAGE_URL",
     "DETAIL_TEXT",
     "IBLOCK_SECTION_ID",
-    "PROPERTY_RESOURSE"
+    "PROPERTY_RESOURSE",
+    "PROPERTY_NEW_TMP"
 );
 $res = CIBlockElement::GetList(Array("created_date"=>"DESC"), $arFilter, false, false, $arSelect);
 if($ar_fields = $res->GetNext())
@@ -102,6 +103,9 @@ if($ar_fields = $res->GetNext())
         $ar_fields["DETAIL_TEXT"]=implode($arTmp,'');
     }
 ?>
+    <?if($USER->GetID()==1):?>
+    <pre><?print_r($ar_fields)?></pre>
+<?endif?>
     <header class="page-entry-header">
         <div class="grid grid-pad overflow">
             <div class="col-1-1">

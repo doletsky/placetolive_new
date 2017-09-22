@@ -25,7 +25,7 @@ if(substr_count($_SERVER["REQUEST_URI"],"?")>0) LocalRedirect($APPLICATION->GetC
             "ELEMENT_CODE" => $_REQUEST["CODE"],
             "CHECK_DATES" => "Y",
             "FIELD_CODE" => Array("ID", "PREVIEW_PICTURE", "TAGS", "SECTION_CODE"),
-            "PROPERTY_CODE" => Array("RESOURSE", "PHOTOS"),
+            "PROPERTY_CODE" => Array("RESOURSE", "PHOTOS", "NEW_TMP"),
             "IBLOCK_URL" => "news.php?ID=#IBLOCK_ID#\"",
             "DETAIL_URL" => "",
             "SET_TITLE" => "Y",

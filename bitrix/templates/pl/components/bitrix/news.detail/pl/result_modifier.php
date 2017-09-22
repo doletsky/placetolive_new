@@ -22,7 +22,7 @@ while($ar_fields = $res->GetNext())
 $arParams['TEST']="data in cash";
 
 //formating text
-if($arResult["ID"]>507){
+if($arResult["ID"]>507 || $arResult['DISPLAY_PROPERTIES']['NEW_TMP']['VALUE']==1){
     $nDETAIL_TEXT=explode("\n", strip_tags($arResult["DETAIL_TEXT"]));
     $arSearch=array(
         '[h]',

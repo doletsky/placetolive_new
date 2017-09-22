@@ -1,7 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<?if($USER->GetID()==1):?>
-<pre><?print_r($arResult)?></pre>
-<?endif?>
+
 
 <header class="page-entry-header">
     <div class="grid grid-pad overflow">
@@ -29,7 +27,7 @@
                     </div>
 
                     <article id="post-25" class="post-25 page type-page status-publish has-post-thumbnail hentry">
-                        <div class="entry-content">
+                        <div class="entry-content"><?if($arResult['DISPLAY_PROPERTIES']['NEW_TMP']['VALUE']==1):?><!--new_tmp--><?endif?>
                             <?=$arResult['DETAIL_TEXT']?>
                             <?if(strlen($arResult['DISPLAY_PROPERTIES']['RESOURSE']['VALUE'])):?>
                                 <p>Источник: <?=$arResult['DISPLAY_PROPERTIES']['RESOURSE']['VALUE']?></p>
