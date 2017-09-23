@@ -44,7 +44,7 @@ if(substr_count($_SERVER["REQUEST_URI"],"?")>0) LocalRedirect($APPLICATION->GetC
             "ACTIVE_DATE_FORMAT" => "d.m.Y",
             "USE_PERMISSIONS" => "N",
             "GROUP_PERMISSIONS" => Array(),
-            "CACHE_TYPE" => "A",
+            "CACHE_TYPE" => "N",
             "CACHE_TIME" => "3600",
             "CACHE_GROUPS" => "Y",
             "DISPLAY_TOP_PAGER" => "Y",

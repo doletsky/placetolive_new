@@ -103,7 +103,7 @@ if($ar_fields = $res->GetNext())
         $ar_fields["DETAIL_TEXT"]=implode($arTmp,'');
     }
 ?>
-    <?if($USER->GetID()==1):?>
+    <?if(0&&$USER->GetID()==1):?>
     <pre><?print_r($ar_fields)?></pre>
 <?endif?>
     <header class="page-entry-header">
@@ -158,51 +158,5 @@ if($ar_fields = $res->GetNext())
             </div>
         </div>
     </section>
-    <script>
-        $(document).ready(function(){
-
-            $(".project-bg img").each(function(){
-                console.log($(this).height());
-                console.log($(this).parent().height());
-                if($(this).parent().height()-$(this).height()>1){
-                    console.log('chaging');
-                    $(this).css('max-width','none');
-                    $(this).css('max-height',$(this).parents('.project-content').height()+'px');
-                }
-            });
-            setTimeout(function(){
-                $('.full-width-image').each(function(){
-                    var imgHeight=$(this).children('img').height();
-                    $(this).css('min-height',imgHeight+'px');
-                    $(this).children('.subtitle-img').css('margin-top',imgHeight+'px');
-                    $(this).children('.subtitle-img').css('text-align','center');
-                });
-            }, 300);
-            setTimeout(function(){
-                $('.full-width-image').each(function(){
-                    var imgHeight=$(this).children('img').height();
-                    $(this).css('min-height',imgHeight+'px');
-                    $(this).children('.subtitle-img').css('margin-top',imgHeight+'px');
-                    $(this).children('.subtitle-img').css('text-align','center');
-                });
-            }, 1000);
-            setTimeout(function(){
-                $('.full-width-image').each(function(){
-                    var imgHeight=$(this).children('img').height();
-                    $(this).css('min-height',imgHeight+'px');
-                    $(this).children('.subtitle-img').css('margin-top',imgHeight+'px');
-                    $(this).children('.subtitle-img').css('text-align','center');
-                });
-            }, 5000);
-            setTimeout(function(){
-                $('.full-width-image').each(function(){
-                    var imgHeight=$(this).children('img').height();
-                    $(this).css('min-height',imgHeight+'px');
-                    $(this).children('.subtitle-img').css('margin-top',imgHeight+'px');
-                    $(this).children('.subtitle-img').css('text-align','center');
-                });
-            }, 15000);
-        });
-
-    </script>
+    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/detail_script.js");?>
 <?}?>

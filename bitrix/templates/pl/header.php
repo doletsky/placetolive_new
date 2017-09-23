@@ -15,73 +15,31 @@ IncludeTemplateLangFile(__FILE__);
 
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--    <link rel="pingback" href="/xmlrpc.php">-->
+
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
     <link rel="stylesheet" id="wpa-css-group-css" href="<?=SITE_TEMPLATE_PATH?>/css/styles.css" type="text/css" media="all">
     <link rel="stylesheet" id="proper-lite-style-group-css" href="<?=SITE_TEMPLATE_PATH?>/css/styles1.css" type="text/css" media="all">
     <link rel="stylesheet" id="proper-lite-open-headings-css" href="<?=SITE_TEMPLATE_PATH?>/css/css.css" type="text/css" media="all">
     <link rel="stylesheet" id="proper-lite-open-body-css" href="<?=SITE_TEMPLATE_PATH?>/css/css.css" type="text/css" media="all">
     <link rel="stylesheet" id="sccss_style-css" href="<?=SITE_TEMPLATE_PATH?>/css/styles2.css" type="text/css" media="all">
-<!--    <script type="text/javascript" src="--><?//=SITE_TEMPLATE_PATH?><!--/js/jquery-3.2.1.min.js"></script>-->
-<!--    <script type="text/javascript" src="--><?//=SITE_TEMPLATE_PATH?><!--/js/jquery-migrate-3.0.0.js"></script>-->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-    <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.ui.touch-punch.min.js"></script>
-    <?$APPLICATION->ShowHead();?>
-    <!--[if lt IE 9]>
-    <script src="<?=SITE_TEMPLATE_PATH?>/js/html5shiv.js"></script>
+    <?$APPLICATION->ShowMeta("keywords")?>
+    <?$APPLICATION->ShowMeta("description")?>
 
-    <![endif]-->
+    <?$APPLICATION->ShowCSS();?>
+    <?
+    if ($USER->IsAdmin()) {
+        $APPLICATION->ShowHeadStrings();
+    }
+    ?>
+    <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.ui.touch-punch.min.js");?>
+
     <style>
         #secondary > #mt-testimonials .testimonial p, .shortcodes .testimonial p  { font-style: italic; }
         .news-info > div { text-align: left; }
         /*.bwWrapper { position:relative; display:block; }*/
     </style>
     <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-
-    <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jscripts.js"></script>
-    <script type="text/javascript" async="" src="<?=SITE_TEMPLATE_PATH?>/css/styles3.css"></script>
-    <?if (!$USER->IsAdmin()):?>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function() {
-                try {
-                    w.yaCounter44799454 = new Ya.Metrika({
-                        id:44799454,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true,
-                        webvisor:true
-                    });
-                } catch(e) { }
-            });
-
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/44799454" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-100077242-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-    <?endif;?>
+    <style type="text/css" src="<?=SITE_TEMPLATE_PATH?>/css/styles3.css"></style>
 </head>
 
 <body class="home page-template page-template-template-home page-template-template-home-php page page-id-352">
