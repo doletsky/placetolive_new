@@ -43,7 +43,7 @@ IncludeTemplateLangFile(__FILE__);
 </head>
 
 <body class="home page-template page-template-template-home page-template-template-home-php page page-id-352">
-<?//$APPLICATION->ShowPanel();?>
+<?if($USER->GetID()==1)$APPLICATION->ShowPanel();?>
 <div id="page" class="hfeed site">
 
     <header id="masthead" class="site-header animated fadeIn delay-2">
