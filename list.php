@@ -37,7 +37,7 @@ if(empty($_REQUEST) || array_key_exists('PAGEN_1', $_REQUEST)) LocalRedirect("/s
         "NEWS_COUNT" => "4",
         "SORT_BY1" => "ACTIVE_FROM",
         "SORT_ORDER1" => "DESC",
-        "SORT_BY2" => "SORT",
+        "SORT_BY2" => "ID",
         "SORT_ORDER2" => "ASC",
         "FILTER_NAME" => "",
         "FIELD_CODE" => Array("ID"),

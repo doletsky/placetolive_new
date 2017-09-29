@@ -111,11 +111,6 @@
 <![endif]-->
 <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jscripts.js"></script>
 <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jscript4.js"></script>
-<?
-if (!$USER->IsAdmin()) {
-    $APPLICATION->ShowHeadStrings();
-}
-?>
 <script type="text/javascript">
     jQuery(function($) {
         $("a#scroll_to_anonces").click(function(){

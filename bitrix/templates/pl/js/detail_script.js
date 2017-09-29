@@ -78,6 +78,12 @@ if((cSoc-$(window).height()-$(window).scrollTop())>0){
     hFlag=0;
     }
 }
-console.log(hFlag+', '+pFlag);//$(window).height());
 });
+    if($('.page-bg-image').attr('data-fimg-src')!=undefined){
+        setTimeout(function(){
+            fImgH=0;
+            $('img.parallax-slider').attr('src',$('.page-bg-image').data('fimg-src'));
+        }, 500);
+    }
+
 });

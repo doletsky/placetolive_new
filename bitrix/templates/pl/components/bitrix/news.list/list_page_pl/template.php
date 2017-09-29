@@ -69,7 +69,7 @@ $APPLICATION->SetTitle($arResult['SECTION']['PATH'][0]['NAME']);?>
 
 
             </section>
-            <div id="fin-content" pcount="<?=$arResult["NAV_RESULT"]->NavPageCount?>" pcurent="1"></div>
+            <div id="fin-content" pcount="<?=$arResult["NAV_RESULT"]->NavPageCount?>" pcurent="1" code="<?=$arParams["PARENT_SECTION_CODE"]?>"></div>
 
 
 
@@ -82,59 +82,3 @@ $APPLICATION->SetTitle($arResult['SECTION']['PATH'][0]['NAME']);?>
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    jQuery(function($){
-        $(document).ready(function(){
-            $(".project-bg img").each(function(){
-                console.log($(this).height());
-                console.log($(this).parent().height());
-                if($(this).parent().height()-$(this).height()>1){
-                    console.log('chaging');
-                    $(this).css('max-width','none');
-                    $(this).css('max-height',$(this).parents('.project-content').height()+'px');
-                }
-            });
-
-            var delay=false;
-            var finContentTop=$('#fin-content').position().top;
-            var pcount=$('#fin-content').attr('pcount');
-            var pcurent=$('#fin-content').attr('pcurent');
-            $(window).scroll(function(){
-               if(pcount>pcurent){
-                   if($(window).scrollTop()+$(window).height()>=finContentTop+100){
-
-                       if(delay==false){
-                           delay=true;
-                           pcurent++;
-                           $.post('/ajax.php',
-                               {
-                                   CODE: '<?=$arParams["PARENT_SECTION_CODE"]?>',
-                                   PAGEN_1: pcurent
-                               },
-                               function(data){
-                               $(".col-1-2.mt-column-clear:last").after(data);
-                               $(".col-1-2.mt-column-clear:hidden").slideDown(1000,function(){
-                                       finContentTop=$('#fin-content').position().top;
-                                       $('#fin-content').attr('pcurent', pcurent);
-                                       delay=false;
-                                   $(".project-bg img").each(function(){
-                                       if($(this).parent().height()-$(this).height()>1){
-                                           $(this).css('max-width','none');
-                                           $(this).css('max-height',$(this).parents('.project-content').height()+'px');
-                                       }
-                                   });
-                                   });
-
-                           });
-
-                       }
-
-                   }
-               }
-
-
-            });
-
-        });
-    });
-</script>

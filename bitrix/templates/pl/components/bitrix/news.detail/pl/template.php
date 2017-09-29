@@ -1,6 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 
-
 <header class="page-entry-header">
     <div class="grid grid-pad overflow">
         <div class="col-1-1">
@@ -9,7 +8,7 @@
             </div>
         </div>
     </div>
-    <div class="page-bg-image" data-parallax="scroll" data-image-src="<?=$arResult['PREVIEW_PICTURE']['SRC']?>" data-z-index="1">
+    <div class="page-bg-image" data-parallax="scroll" data-image-src="<?=$arResult['PREVIEW_PICTURE']['SRC']?>" data-z-index="1"<?if(is_array( $arResult['DETAIL_PICTURE'])):?>data-fimg-src="<?=$arResult['DETAIL_PICTURE']['SRC']?>"<?endif?>>
     </div>
 </header><!-- .entry-header -->
 

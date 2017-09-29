@@ -24,13 +24,10 @@ IncludeTemplateLangFile(__FILE__);
     <link rel="stylesheet" id="sccss_style-css" href="<?=SITE_TEMPLATE_PATH?>/css/styles2.css" type="text/css" media="all">
     <?$APPLICATION->ShowMeta("keywords")?>
     <?$APPLICATION->ShowMeta("description")?>
+    <?$APPLICATION->ShowHeadStrings()?>
 
     <?$APPLICATION->ShowCSS();?>
-    <?
-    if ($USER->IsAdmin()) {
-        $APPLICATION->ShowHeadStrings();
-    }
-    ?>
+
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.ui.touch-punch.min.js");?>
 
     <style>
