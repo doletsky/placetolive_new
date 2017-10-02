@@ -10,7 +10,14 @@
 .triod.active {
     display: block;
 }
-
+.triod10 {
+    height: 196px;
+    width: 10px;
+    left: 96px;
+    top: 1px;
+    background-color: gray;
+    transform-origin: 50% 98px;
+}
 .triod41{
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
@@ -69,65 +76,65 @@
 }
 #imgColor .p2 {
     width: 0;
-    height: 240px;
-    border-right-width: 130px;
+    height: 46%;
+    border-right-width: 7vw;
     border-right-style: solid;
-    border-top: 11px solid transparent;
-    border-bottom: 3px solid transparent;
+    border-top: 0.5vw solid transparent;
+    border-bottom: 0.3vw;
     position: absolute;
     z-index: 99;
-    top: 90px;
-    left: 730px;
+    top: 16%;
+    left: 83%;
 }
 #imgColor .p3 {
     width: 0;
-    height: 200px;
-    border-left-width: 50px;
+    height: 39%;
+    border-left-width: 3vw;
     border-left-style: solid;
-    border-top: 11px solid transparent;
-    border-bottom: 3px solid transparent;
+    border-top: 0.7vw solid transparent;
+    border-bottom: 0.3vw solid transparent;
     position: absolute;
     z-index: 99;
-    top: 127px;
-    left: 390px;
+    top: 23%;
+    left: 44%;
 }
 #imgColor .p4 {
     width: 0;
-    height: 141px;
-    border-right-width: 90px;
+    height: 28%;
+    border-right-width: 5vw;
     border-right-style: solid;
-    border-top: 11px solid transparent;
-    border-bottom: 3px solid transparent;
+    border-top: 0.7vw solid transparent;
+    border-bottom: 0.3vw solid transparent;
     position: absolute;
     z-index: 99;
-    top: 119px;
-    left: 470px;
+    top: 22%;
+    left: 53%;
 }
 #imgColor .p5 {
     position: absolute;
     z-index: 99;
-    top: 376px;
-    left: 76px;
-    width: 478px;
-    height: 159px;
-    transform: rotate(-12deg);
+    top: 64%;
+    left: 8%;
+    width: 80%;
+    height: 30%;
+    transform: rotate(9deg);
 }
 #imgColor .p6 {
-    width: 20px;
-    height: 27px;
+    width: 2.3%;
+    height: 5%;
     position: absolute;
     z-index: 996;
-    top: 297px;
-    left: 211px;
+    top: 54%;
+    left: 24%;
     transform: rotate(-10deg);
 }
 #imgColor .p7 {
-    width: 16px;
-    height: 16px;
+    width: 1.6%;
+    height: 3.2%;
     position: absolute;
     z-index: 996;
-    top: 279px;
-    left: 481px;
+    top: 50.6%;
+    left: 55%;
     transform: skew(-15deg);
 }
 /*rgb(50, 183, 108)*/
@@ -140,43 +147,43 @@
 #imgColor .s1 {
     width: 0;
     height: 24%;
-    border-left-width: 306px;
+    border-left-width: 16.8vw;
     border-left-style: solid;
-    border-top: 1px solid transparent;
-    border-bottom: 69px solid transparent;
+    border-top: 0.1vw solid transparent;
+    border-bottom: 4vw solid transparent;
     position: absolute;
     z-index: 990;
     top: 53%;
     left: 9%;
 }
 #imgColor .s2 {
-    width: 20px;
-    height: 50px;
+    width: 2%;
+    height: 9%;
     position: absolute;
     z-index: 990;
-    top: 300px;
-    left: 373px;
+    top: 54.7%;
+    left: 42.7%;
 }
 #imgColor .s3 {
     width: 0;
-    height: 79px;
-    border-right-width: 276px;
+    height: 6.1vw;
+    border-right-width: 15vw;
     border-right-style: solid;
-    border-top: 1px solid transparent;
-    border-bottom: 37px solid transparent;
+    border-top: 0.1vw solid transparent;
+    border-bottom: 2vw solid transparent;
     position: absolute;
     z-index: 990;
-    top: 270px;
-    left: 440px;
+    top: 49.6%;
+    left: 50%;
 }
 #imgColor .s4 {
-    width: 20px;
-    height: 60px;
+    width: 4%;
+    height: 10%;
     position: absolute;
     z-index: 990;
-    top: 295px;
-    left: 424px;
-    border-radius: 8px;
+    top: 53.8%;
+    left: 48.3%;
+    border-radius: 16%;
 }
 #imgColor .t-border {
     border-color: rgb(255, 244, 50);
@@ -185,33 +192,33 @@
     background-color: rgb(255, 244, 50);
 }
 #imgColor .t1 {
-    width: 27px;
-    height: 20px;
+    width: 3%;
+    height: 3%;
     border-radius: 10px;
     position: absolute;
     z-index: 995;
-    top: 372px;
-    left: 484px;
+    top: 68%;
+    left: 55%;
 }
 #imgColor .t2 {
-    width: 80px;
-    height: 30px;
+    width: 9%;
+    height: 5%;
     position: absolute;
     z-index: 995;
-    top: 375px;
-    left: 514px;
+    top: 69%;
+    left: 59%;
 }
 #imgColor .t3 {
-    width: 34px;
+    width: 6%;
     height: 0;
-    border-top-width: 37px;
+    border-top-width: 2vw;
     border-top-style: solid;
-    border-left: 12px solid transparent;
-    border-right: 8px solid transparent;
+    border-left: 1vw solid transparent;
+    border-right: 0.7vw solid transparent;
     position: absolute;
     z-index: 995;
-    top: 281px;
-    left: 122px;
+    top: 51%;
+    left: 14%;
 }
 #imgColor .t4 {
     width: 19%;
@@ -223,36 +230,43 @@
     transform: rotate(-8deg);
 }
 #imgColor .t5 {
-    width: 183px;
-    height: 37px;
+    width: 21%;
+    height: 7%;
     position: absolute;
     z-index: 995;
-    top: 273px;
-    left: 476px;
+    top: 49.7%;
+    left: 54%;
     transform: rotate(3deg);
 }
 #imgColor .t6 {
-    width: 34px;
-    height: 0;
-    border-top-width: 37px;
-    border-top-style: solid;
-    border-left: 12px solid transparent;
-    border-right: 16px solid transparent;
+    width: 5%;
+    height: 7%;
+    /* border-top-width: 2vw; */
+    /* border-top-style: solid; */
+    /* border-left: 0.7vw solid transparent; */
+    /* border-right: 1.5vw solid transparent; */
     position: absolute;
     z-index: 995;
-    top: 270px;
-    left: 625px;
+    top: 49%;
+    left: 72%;
+    background-color: rgb(101, 196, 47);
+    transform: rotate(22deg);
+}
+
+#rotColor1 {
+    position: relative;
+    top: -20px;
 }
 
 #rotColor2 {
     position: relative;
-    left: -70px;
+    left: -133px;
     top: 260px;
 }
 
 #rotColor3 {
     position: relative;
-    left: 80px;
+    left: -40px;
     top: 125px;
 }
 

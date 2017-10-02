@@ -74,6 +74,7 @@
         </div>
         <div class="container c6">
             <div style="position: relative">
+                <div class="triod triod10" id="triod10"></div>
                 <div class="triod triod41 active" id="triod41"></div>
                 <div class="triod triod33" id="triod33"></div>
                 <div class="triod triod17" id="triod17"></div>
@@ -111,14 +112,15 @@
         <div class="colorP1" id="colorP1"></div>
         <div class="colorP2" id="colorP2"></div>
         <div class="colorP3" id="colorP3"></div>
-        <input id="rotColor1" type="button" value="ROTATE">
-        <input id="rotColor2" type="button" value="ROTATE">
-        <input id="rotColor3" type="button" value="ROTATE">
+        <input id="rotColor1" type="button" value="ПОМЕНЯТЬ">
+        <input id="rotColor2" type="button" value="ПОМЕНЯТЬ">
+        <input id="rotColor3" type="button" value="ПОМЕНЯТЬ">
     </div>
     <div class="check_gamma">
-        <input name="triod_ch" type="radio" id="triod41" checked="checked" data-k="1.05">Равносторонний
-        <input name="triod_ch" type="radio" id="triod33" data-k="0.52">Равнобедренный
-        <input name="triod_ch" type="radio" id="triod17" data-k="-1.05">Ньюанс
+        <input name="triod_ch" type="radio" id="triod10" data-k="1.5715">Комплементарная схема<br>
+        <input name="triod_ch" type="radio" id="triod41" checked="checked" data-k="1.05">Комплементарная триадная схема<br>
+        <input name="triod_ch" type="radio" id="triod33" data-k="0.52">Триадная схема<br>
+        <input name="triod_ch" type="radio" id="triod17" data-k="-1.05">Аналогавая схема
     </div>
 
 

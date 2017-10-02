@@ -1,4 +1,10 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+if(!is_array($arResult['SECTION'])){
+    include($_SERVER["DOCUMENT_ROOT"]."/404.php");
+}else{
+
+
+
 $APPLICATION->SetTitle($arResult['SECTION']['PATH'][0]['NAME']);?>
 
 
@@ -82,3 +88,4 @@ $APPLICATION->SetTitle($arResult['SECTION']['PATH'][0]['NAME']);?>
         </div>
     </div>
 </div>
+<?}?>

@@ -232,13 +232,15 @@ $(document).ready(function() {
         $('.s-background').css('background-color', sColor);
         $('.t-background').css('background-color', tColor);
         $('.p-border').css('border-color', cColor);
-        $('.s1').css('border-left', '306px solid '+sColor);
-        $('.s3').css('border-right', '276px solid '+sColor);
+        $('.s1').css('border-left', '16.8vw solid '+sColor);
+        $('.s3').css('border-right', '15vw solid '+sColor);
         $('.t-border').css('border-color', tColor);
+
 
         $('.p5').css('background-color', tColor);
         $('.t1').css('background-color', sColor);
         $('.t2').css('background-color', sColor);
+        $('.t6').css('background-color', tColor);
     }
 
     position($("#dragP1"));
