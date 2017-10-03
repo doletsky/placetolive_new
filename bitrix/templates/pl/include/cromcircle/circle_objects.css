@@ -12,8 +12,8 @@
 }
 .triod10 {
     height: 196px;
-    width: 10px;
-    left: 96px;
+    width: 5px;
+    left: 98px;
     top: 1px;
     background-color: gray;
     transform-origin: 50% 98px;
@@ -38,11 +38,25 @@
 }
 
 .check_gamma {
-    position: absolute;
-    top: 640px;
-    left: 130px;
+    position: relative;
+    /* top: 640px; */
+    /* left: 130px; */
+    float: left;
+    width: 281px;
 }
-/*.check_gamma input {*/
+.check_gamma input {
+    float: left;
+    margin-top: 10px;
+}
+.check_gamma img {
+    width: 30px;
+    float: left;
+    margin-left: 20px;
+}
+.check_gamma div {
+    clear: both;
+}
+/*.check_gamma span {*/
     /*float: left;*/
 /*}*/
 
@@ -50,6 +64,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
+    margin-bottom: 30px;
 }
 #imgColor img {
     position: relative;
@@ -261,21 +276,15 @@
 #rotColor2 {
     position: relative;
     left: -133px;
-    top: 260px;
+    top: 210px;
 }
 
 #rotColor3 {
-    position: relative;
-    left: -40px;
-    top: 125px;
+    position: absolute;
+    left: 170px;
+    top: 95px;
 }
-
-/*@media handheld, only screen and (max-width: 767px) {*/
-    /*.full-width-circle *{*/
-        /*display: none;*/
-    /*}*/
-    /*.full-width-circle:before {*/
-        /*content: "Эта страница пока не адаптирована под мобильные экраны";*/
-        /*position: relative;*/
-    /*}*/
-/*}*/
+.colorPBox input {
+    background-color: white;
+    color: black !important;
+}

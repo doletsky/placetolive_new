@@ -15,8 +15,8 @@
     margin: 20px;
     position: relative;
     float: left;
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: 350px;
 }
 .colorP2, .colorP3{
     width: 80px;
@@ -24,18 +24,18 @@
     border: 1px solid #000000;
     position: absolute;
     z-index: 999;
-    left: 150px;
+    left: 140px;
 }
 .colorP1{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     position: absolute;
     z-index: 99;
     top: 40px;
     border: 1px solid #000000;
 }
 .colorP3{
-    top: 200px;
+    top: 150px;
 }
 .container {
     top:10px;
@@ -55,8 +55,8 @@
     border: 4px solid #FFFFFF;
     border-radius: 11px;
     z-index: 999999;
-    top: 110px;
-    left: 350px;
+    top: 190px;
+    left: 330px;
 }
 .dragP2{
     display: none;
@@ -105,7 +105,7 @@
     left: 50%;
     top: 0;
     transform-origin: left bottom;
-    background: #730B0E;/*'красный 1#730B0E.2#910F13.5#EC1B24.6#EF3544.7#F26065'*/
+    background: #730B0E;/*'пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 1#730B0E.2#910F13.5#EC1B24.6#EF3544.7#F26065'*/
     transform: skewY(120deg);
 }
 .c2 .r1 {
@@ -123,7 +123,7 @@
 .r2 {
     transform: rotate(30deg) skewY(120deg);
     background: #731316;
-    /*'красно-орнж, #731316, #92191F, #EE2C38, #F2564D, #F47769*/
+    /*'пїЅпїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅ, #731316, #92191F, #EE2C38, #F2564D, #F47769*/
 
 }
 .c2 .r2 {
@@ -141,7 +141,7 @@
 .r3 {
     transform: rotate(60deg) skewY(120deg);
     background: #6A2E07;
-    /*"оранж, #6A2E07. #94430B. #F47115. #F58535. #F79B5C"*/
+    /*"пїЅпїЅпїЅпїЅпїЅ, #6A2E07. #94430B. #F47115. #F58535. #F79B5C"*/
 }
 .c2 .r3 {
     background: #94430B;
@@ -158,7 +158,7 @@
 .r4 {
     transform: rotate(90deg) skewY(120deg);
     background: #804E06;
-    /*оранж-жел #804E06. #955D07 #F79C0E #F9B134 #FABD5F*/
+    /*пїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅ #804E06. #955D07 #F79C0E #F9B134 #FABD5F*/
 }
 .c2 .r4 {
     background: #955D07;
@@ -175,7 +175,7 @@
 .r5 {
     transform: rotate(120deg) skewY(120deg);
     background: #827B00;
-    /*жел #827B00 #989000 #FFF100 #FFF432 #FFF765*/
+    /*пїЅпїЅпїЅ #827B00 #989000 #FFF100 #FFF432 #FFF765*/
 }
 .c2 .r5 {
     background: #989000;
@@ -192,7 +192,7 @@
 .r6 {
     transform: rotate(150deg) skewY(120deg);
     background: #346415;
-    /*жел-зел #346415 #3D751A #65C42F #7FCD51 #A5DB74*/
+    /*пїЅпїЅпїЅ-пїЅпїЅпїЅ #346415 #3D751A #65C42F #7FCD51 #A5DB74*/
 }
 .c2 .r6 {
     background: #3D751A;
@@ -209,7 +209,7 @@
 .r7 {
     transform: rotate(180deg) skewY(120deg);
     background: #00552D;
-    /*зел #00552D #006436 #00A65F #32B76C #65C888*/
+    /*пїЅпїЅпїЅ #00552D #006436 #00A65F #32B76C #65C888*/
 }
 .c2 .r7 {
     background: #006436;
@@ -226,7 +226,7 @@
 .r8 {
     transform: rotate(210deg) skewY(120deg);
     background: #00555A;
-    /*зел-син #00555A #00656A #00AAAF #32BABC #65CBC4*/
+    /*пїЅпїЅпїЅ-пїЅпїЅпїЅ #00555A #00656A #00AAAF #32BABC #65CBC4*/
 }
 .c2 .r8 {
     background: #00656A;
@@ -243,7 +243,7 @@
 .r9 {
     transform: rotate(240deg) skewY(120deg);
     background: #0C2F5B;
-    /*син #0C2F5B #0F386B #1B62B7 #3871C1 #6285CC*/
+    /*пїЅпїЅпїЅ #0C2F5B #0F386B #1B62B7 #3871C1 #6285CC*/
 }
 .c2 .r9 {
     background: #0F386B;
@@ -260,7 +260,7 @@
 .r10 {
     transform: rotate(270deg) skewY(120deg);
     background: #121C48;
-    /*син-феол #121C48 #162257 #293D9B #4346A4 #535BB2*/
+    /*пїЅпїЅпїЅ-пїЅпїЅпїЅпїЅ #121C48 #162257 #293D9B #4346A4 #535BB2*/
 }
 .c2 .r10 {
     background: #162257;
@@ -277,7 +277,7 @@
 .r11 {
     transform: rotate(300deg) skewY(120deg);
     background: #291142;
-    /*феол #291142 #311550 #542790 #6D399E #7D5AB3*/
+    /*пїЅпїЅпїЅпїЅ #291142 #311550 #542790 #6D399E #7D5AB3*/
 }
 .c2 .r11 {
     background: #311550;
@@ -294,7 +294,7 @@
 .r12 {
     transform: rotate(330deg) skewY(120deg);
     background: #530840;
-    /*феол-кр #530840 #610A4E #A0138E #A83AA3 #BD65B9*/
+    /*пїЅпїЅпїЅпїЅ-пїЅпїЅ #530840 #610A4E #A0138E #A83AA3 #BD65B9*/
 }
 .c2 .r12 {
     background: #610A4E;

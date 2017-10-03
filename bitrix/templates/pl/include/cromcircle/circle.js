@@ -52,8 +52,14 @@ $(document).ready(function() {
         $('.triod').removeClass('active');
         var idClass=$(this).attr('id');
         $('.'+idClass).addClass('active');
+        $(".check_gamma span").css('font-weight', 'normal');
+        $(this).parent('div').children('span').css('font-weight', 'bold');
         kG=$(this).data('k');
         triodRotate();
+
+        var modX=xG/Math.sqrt(xG*xG);
+        getColor(modX,tgG,rG,'#colorP1');
+
         posCoPoints();
         colorInImg();
     });

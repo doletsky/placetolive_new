@@ -108,6 +108,30 @@
             <div class="t6 t-border"></div>
         </div>
     </div>
+    <div class="check_gamma">
+        <div>
+            <input name="triod_ch" type="radio" id="triod10" data-k="1.5715">
+            <img src="bitrix/templates/pl/images/cromcircle/compl.jpg"><br>
+            <span>Комплементарная схема</span>
+        </div>
+        <div>
+            <input name="triod_ch" type="radio" id="triod41" checked="checked" data-k="1.05">
+            <img src="bitrix/templates/pl/images/cromcircle/compl_triad.jpg"><br>
+            <span style="font-weight: bold">Комплементарная триадная схема</span>
+        </div>
+
+        <div>
+            <input name="triod_ch" type="radio" id="triod33" data-k="0.52">
+            <img src="bitrix/templates/pl/images/cromcircle/triad.jpg"><br>
+            <span>Триадная схема</span>
+        </div>
+        <div>
+            <input name="triod_ch" type="radio" id="triod17" data-k="-1.05">
+            <img src="bitrix/templates/pl/images/cromcircle/analog.jpg"><br>
+            <span>Аналоговая схема</span>
+        </div>
+
+    </div>
     <div class="colorPBox">
         <div class="colorP1" id="colorP1"></div>
         <div class="colorP2" id="colorP2"></div>
@@ -116,12 +140,7 @@
         <input id="rotColor2" type="button" value="ПОМЕНЯТЬ">
         <input id="rotColor3" type="button" value="ПОМЕНЯТЬ">
     </div>
-    <div class="check_gamma">
-        <input name="triod_ch" type="radio" id="triod10" data-k="1.5715">Комплементарная схема<br>
-        <input name="triod_ch" type="radio" id="triod41" checked="checked" data-k="1.05">Комплементарная триадная схема<br>
-        <input name="triod_ch" type="radio" id="triod33" data-k="0.52">Триадная схема<br>
-        <input name="triod_ch" type="radio" id="triod17" data-k="-1.05">Аналогавая схема
-    </div>
+
 
 
 </div>
