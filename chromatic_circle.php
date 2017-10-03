@@ -2,6 +2,8 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 require_once($_SERVER["DOCUMENT_ROOT"].SITE_TEMPLATE_PATH."/include/Mobile_Detect.php");
 $APPLICATION->SetTitle("Хроматический круг");
+$APPLICATION->SetPageProperty("keywords", "цвет в интерьере, сочетание цветов в интерьере, подбор цвета, подбор цветовой гаммы, подбор цвета стен, хроматический круг, подбор цветов в интерьере");
+$APPLICATION->SetPageProperty("description", "Хроматический круг, это онлайн подбор цветовой гаммы, сочетания цветов для интерьера. Эскиз интерьера покажет картину сочетания цветов.");
 ?>
     <header class="page-entry-header">
         <div class="grid grid-pad overflow">
@@ -29,10 +31,13 @@ $APPLICATION->SetTitle("Хроматический круг");
 
     <article id="post-25" class="post-25 page type-page status-publish has-post-thumbnail hentry">
     <div class="entry-content">
+        <p>
+            Хроматичеcкий круг — это онлайн сервис подбора цветовой гаммы для интерьера, вариантов сочетания цветов. Для общего представления мы предложили эскизный вид, который позволит увидеть цельную картину сочетания цветов, подобрать наиболее подходящий.
+        </p>
 <?
     $detect = new Mobile_Detect;
     if( $detect->isMobile() || $detect->isTablet() ){
-        echo "Страница интерактивного хроматического круга работает временно доступна только полноэранных устройствах.";
+        echo "<p>Страница интерактивного хроматического круга работает временно доступна только на полноэранных устройствах.</p>";
     }else{
         $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/cromcircle/circle.js");
         $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_color.css");
