@@ -2,89 +2,97 @@
 
 
     <div class="circle col-1-2">
-        <div class="container">
-            <div class="sector"></div>
-            <div class="sector r2"></div>
-            <div class="sector r3"></div>
-            <div class="sector r4"></div>
-            <div class="sector r5"></div>
-            <div class="sector r6"></div>
-            <div class="sector r7"></div>
-            <div class="sector r8"></div>
-            <div class="sector r9"></div>
-            <div class="sector r10"></div>
-            <div class="sector r11"></div>
-            <div class="sector r12"></div>
-        </div>
-        <div class="container c2">
-            <div class="sector r1"></div>
-            <div class="sector r2"></div>
-            <div class="sector r3"></div>
-            <div class="sector r4"></div>
-            <div class="sector r5"></div>
-            <div class="sector r6"></div>
-            <div class="sector r7"></div>
-            <div class="sector r8"></div>
-            <div class="sector r9"></div>
-            <div class="sector r10"></div>
-            <div class="sector r11"></div>
-            <div class="sector r12"></div>
-        </div>
-        <div class="container c3">
-            <div class="sector r1"></div>
-            <div class="sector r2"></div>
-            <div class="sector r3"></div>
-            <div class="sector r4"></div>
-            <div class="sector r5"></div>
-            <div class="sector r6"></div>
-            <div class="sector r7"></div>
-            <div class="sector r8"></div>
-            <div class="sector r9"></div>
-            <div class="sector r10"></div>
-            <div class="sector r11"></div>
-            <div class="sector r12"></div>
-        </div>
-        <div class="container c4">
-            <div class="sector r1"></div>
-            <div class="sector r2"></div>
-            <div class="sector r3"></div>
-            <div class="sector r4"></div>
-            <div class="sector r5"></div>
-            <div class="sector r6"></div>
-            <div class="sector r7"></div>
-            <div class="sector r8"></div>
-            <div class="sector r9"></div>
-            <div class="sector r10"></div>
-            <div class="sector r11"></div>
-            <div class="sector r12"></div>
-        </div>
-        <div class="container c5">
-            <div class="sector r1"></div>
-            <div class="sector r2"></div>
-            <div class="sector r3"></div>
-            <div class="sector r4"></div>
-            <div class="sector r5"></div>
-            <div class="sector r6"></div>
-            <div class="sector r7"></div>
-            <div class="sector r8"></div>
-            <div class="sector r9"></div>
-            <div class="sector r10"></div>
-            <div class="sector r11"></div>
-            <div class="sector r12"></div>
-        </div>
-        <div class="container c6">
-            <div style="position: relative">
-                <div class="triod triod10" id="triod10"></div>
-                <div class="triod triod41 active" id="triod41"></div>
-                <div class="triod triod33" id="triod33"></div>
-                <div class="triod triod17" id="triod17"></div>
+        <div class="circle-pos">
+            <div class="circle-help active-help">
+                <div class="circle-help-text">Перемещайте мышкой эту плашку для выбора основного цвета</div>
+                <div class="fa fa-mail-reply str"></div>
             </div>
+            <div class="container">
+                <div class="sector"></div>
+                <div class="sector r2"></div>
+                <div class="sector r3"></div>
+                <div class="sector r4"></div>
+                <div class="sector r5"></div>
+                <div class="sector r6"></div>
+                <div class="sector r7"></div>
+                <div class="sector r8"></div>
+                <div class="sector r9"></div>
+                <div class="sector r10"></div>
+                <div class="sector r11"></div>
+                <div class="sector r12"></div>
+            </div>
+            <div class="container c2">
+                <div class="sector r1"></div>
+                <div class="sector r2"></div>
+                <div class="sector r3"></div>
+                <div class="sector r4"></div>
+                <div class="sector r5"></div>
+                <div class="sector r6"></div>
+                <div class="sector r7"></div>
+                <div class="sector r8"></div>
+                <div class="sector r9"></div>
+                <div class="sector r10"></div>
+                <div class="sector r11"></div>
+                <div class="sector r12"></div>
+            </div>
+            <div class="container c3">
+                <div class="sector r1"></div>
+                <div class="sector r2"></div>
+                <div class="sector r3"></div>
+                <div class="sector r4"></div>
+                <div class="sector r5"></div>
+                <div class="sector r6"></div>
+                <div class="sector r7"></div>
+                <div class="sector r8"></div>
+                <div class="sector r9"></div>
+                <div class="sector r10"></div>
+                <div class="sector r11"></div>
+                <div class="sector r12"></div>
+            </div>
+            <div class="container c4">
+                <div class="sector r1"></div>
+                <div class="sector r2"></div>
+                <div class="sector r3"></div>
+                <div class="sector r4"></div>
+                <div class="sector r5"></div>
+                <div class="sector r6"></div>
+                <div class="sector r7"></div>
+                <div class="sector r8"></div>
+                <div class="sector r9"></div>
+                <div class="sector r10"></div>
+                <div class="sector r11"></div>
+                <div class="sector r12"></div>
+            </div>
+            <div class="container c5">
+                <div class="sector r1"></div>
+                <div class="sector r2"></div>
+                <div class="sector r3"></div>
+                <div class="sector r4"></div>
+                <div class="sector r5"></div>
+                <div class="sector r6"></div>
+                <div class="sector r7"></div>
+                <div class="sector r8"></div>
+                <div class="sector r9"></div>
+                <div class="sector r10"></div>
+                <div class="sector r11"></div>
+                <div class="sector r12"></div>
+            </div>
+            <div class="container c6">
+                <div style="position: relative">
+                    <div class="triod triod10" id="triod10"></div>
+                    <div class="triod triod41 active" id="triod41"></div>
+                    <div class="triod triod33" id="triod33"></div>
+                    <div class="triod triod17" id="triod17"></div>
+                </div>
 
+
+            </div>
+            <div class="dragP1" id="dragP1"></div>
+            <div class="dragP2" id="dragP2"></div>
+            <div class="dragP2" id="dragP3"></div>
 
         </div>
-        <div class="dragP1" id="dragP1"></div>
-        <div class="dragP2" id="dragP2"></div>
-        <div class="dragP2" id="dragP3"></div>
+
     </div>
     <div class="col-1-2">
         <div id="imgColor">
@@ -109,6 +117,10 @@
         </div>
     </div>
     <div class="check_gamma">
+        <div class="gamma-help active-help">
+            <div class="gamma-help-text">Выбирайте схему</div>
+            <div class="fa fa-share str"></div>
+        </div>
         <div>
             <input name="triod_ch" type="radio" id="triod10" data-k="1.5715">
             <img src="bitrix/templates/pl/images/cromcircle/compl.jpg"><br>
@@ -133,6 +145,10 @@
 
     </div>
     <div class="colorPBox">
+        <div class="cBox-help active-help">
+            <div class="cBox-help-text">Нажмите, чтобы поменять основной или дополнительные цвета между собой.</div>
+            <div class="fa fa-mail-reply str"></div>
+        </div>
         <div class="colorP1" id="colorP1"></div>
         <div class="colorP2" id="colorP2"></div>
         <div class="colorP3" id="colorP3"></div>
@@ -144,7 +160,6 @@
 
 
 </div>
-
 
 
 

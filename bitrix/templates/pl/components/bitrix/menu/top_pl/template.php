@@ -13,7 +13,11 @@
                     <?endforeach?>
                 </ul>
             </li>
-<!--            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/specialty/">Спец.проекты</a></li>-->
+            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Сервис</a>
+                <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/chromatic_circle.php">Хроматический круг</a></li>
+                </ul>
+            </li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/search.php">Найти</a></li>
         </ul>
     </div>

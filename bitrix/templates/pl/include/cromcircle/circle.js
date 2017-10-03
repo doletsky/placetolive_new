@@ -49,6 +49,7 @@ $(document).ready(function() {
     rG=0;
 
     $(".check_gamma input").click(function(){
+        $(".gamma-help").removeClass("active-help");
         $('.triod').removeClass('active');
         var idClass=$(this).attr('id');
         $('.'+idClass).addClass('active');
@@ -86,6 +87,10 @@ $(document).ready(function() {
         $('#colorP2').css('background-color',tColor);
         $('#colorP3').css('background-color',sColor);
         colorInImg();
+    });
+
+    $(".colorPBox input").mousedown(function(){
+        $(".cBox-help").removeClass("active-help");
     });
 
     function triodRotate(){
@@ -149,6 +154,9 @@ $(document).ready(function() {
         $(id).css('background-color', arColor[argX][argTg][argR]);
     }
 
+    $("#dragP1").mousedown(function(){
+        $(".circle-help").removeClass("active-help");
+    });
     $("#dragP1").draggable({
         stop: function(event, ui) {
             var x=$("#dragP1").position().left-307;

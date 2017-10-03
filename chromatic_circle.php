@@ -11,7 +11,7 @@ $APPLICATION->SetTitle("Хроматический круг");
                 </div>
             </div>
         </div>
-        <div class="page-bg-image" data-parallax="scroll" data-image-src="<?=$arResult['PREVIEW_PICTURE']['SRC']?>" data-z-index="1">
+        <div class="page-bg-image" data-parallax="scroll" data-image-src="<?=SITE_TEMPLATE_PATH."/images/krug_23.jpg"?>" data-z-index="1">
         </div>
     </header><!-- .entry-header -->
 
@@ -29,18 +29,18 @@ $APPLICATION->SetTitle("Хроматический круг");
 
     <article id="post-25" class="post-25 page type-page status-publish has-post-thumbnail hentry">
     <div class="entry-content">
-<?if(in_array("1", $USER->GetUserGroupArray())){
+<?
     $detect = new Mobile_Detect;
-//    if( $detect->isMobile() || $detect->isTablet() ){
-//        echo "Эта страница пока не адаптирована под мобильные экраны";
-//    }else{
+    if( $detect->isMobile() || $detect->isTablet() ){
+        echo "Страница интерактивного хроматического круга работает временно доступна только полноэранных устройствах.";
+    }else{
         $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/cromcircle/circle.js");
         $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_color.css");
         $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_objects.css");
         $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/cromcircle/circle.php");
-//    }
+    }
 
-}?>
+?>
     </div>
         <!-- .entry-content -->
 
