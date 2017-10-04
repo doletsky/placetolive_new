@@ -37,7 +37,7 @@ $APPLICATION->SetPageProperty("description", "Хроматический круг, это онлайн под
 <?
     $detect = new Mobile_Detect;
     if( $detect->isMobile() || $detect->isTablet() ){
-        echo "<p>Страница интерактивного хроматического круга работает временно доступна только на полноэранных устройствах.</p>";
+        echo "<p>Страница интерактивного хроматического круга временно доступна только на полноэранных устройствах.</p>";
     }else{
         $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/cromcircle/circle.js");
         $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_color.css");
