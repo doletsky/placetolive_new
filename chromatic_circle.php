@@ -35,14 +35,16 @@ $APPLICATION->SetPageProperty("description", "Хроматический круг, это онлайн под
             Хроматичеcкий круг — это онлайн сервис подбора цветовой гаммы для интерьера, вариантов сочетания цветов. Для общего представления мы предложили эскизный вид, который позволит увидеть цельную картину сочетания цветов, подобрать наиболее подходящий.
         </p>
 <?
-    $detect = new Mobile_Detect;
-    if( $detect->isMobile() || $detect->isTablet() ){
+    $detect = new Mobile_Detect;$PC=1;
+    if($detect->isMobile() || $detect->isTablet()) $PC=0;
+
+    if( $PC==0 && $USER->GetID()!=1 ){
         echo "<p>Страница интерактивного хроматического круга временно доступна только на полноэранных устройствах.</p>";
     }else{
         $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/cromcircle/circle.js");
         $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_color.css");
         $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_objects.css");
-        $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/cromcircle/circle.php");
+        $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/cromcircle/circle.php",array("PC"=>$PC));
     }
 
 ?>

@@ -94,6 +94,7 @@
         </div>
 
     </div>
+    <?if($PC==1):?>
     <div class="col-1-2">
         <div id="imgColor">
             <img src="bitrix/templates/pl/images/examPalitra3.png">
@@ -116,6 +117,7 @@
             <div class="t6 t-border"></div>
         </div>
     </div>
+    <?endif?>
     <div class="check_gamma">
         <div class="gamma-help active-help">
             <div class="gamma-help-text">Выбирайте схему</div>
