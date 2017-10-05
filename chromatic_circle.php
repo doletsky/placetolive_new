@@ -41,9 +41,16 @@ $APPLICATION->SetPageProperty("description", "Хроматический круг, это онлайн под
     if( $PC==0 && $USER->GetID()!=1 ){
         echo "<p>Страница интерактивного хроматического круга временно доступна только на полноэранных устройствах.</p>";
     }else{
-        $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/cromcircle/circle.js");
-        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_color.css");
-        $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_objects.css");
+        if($PC==1){
+            $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/cromcircle/circle.js");
+            $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_color.css");
+            $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_objects.css");
+        }else{
+            $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/cromcircle/circle_mobil.js");
+            $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_color_mobil.css");
+            $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_objects_mobil.css");
+        }
+
         $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/cromcircle/circle.php",array("PC"=>$PC));
     }
 
