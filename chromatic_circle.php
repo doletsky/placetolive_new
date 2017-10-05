@@ -4,6 +4,8 @@ require_once($_SERVER["DOCUMENT_ROOT"].SITE_TEMPLATE_PATH."/include/Mobile_Detec
 $APPLICATION->SetTitle("Хроматический круг");
 $APPLICATION->SetPageProperty("keywords", "цвет в интерьере, сочетание цветов в интерьере, подбор цвета, подбор цветовой гаммы, подбор цвета стен, хроматический круг, подбор цветов в интерьере");
 $APPLICATION->SetPageProperty("description", "Хроматический круг, это онлайн подбор цветовой гаммы, сочетания цветов для интерьера. Эскиз интерьера покажет картину сочетания цветов.");
+$detect = new Mobile_Detect;$PC=1;
+if($detect->isMobile() || $detect->isTablet()) $PC=0;
 ?>
     <header class="page-entry-header">
         <div class="grid grid-pad overflow">
@@ -32,15 +34,13 @@ $APPLICATION->SetPageProperty("description", "Хроматический круг, это онлайн под
     <article id="post-25" class="post-25 page type-page status-publish has-post-thumbnail hentry">
     <div class="entry-content">
         <p>
-            Хроматичеcкий круг — это онлайн сервис подбора цветовой гаммы для интерьера, вариантов сочетания цветов. Для общего представления мы предложили эскизный вид, который позволит увидеть цельную картину сочетания цветов, подобрать наиболее подходящий.
+            Хроматичеcкий круг — это онлайн сервис подбора цветовой гаммы для интерьера, вариантов сочетания цветов. Для общего представления<?if($PC==0):?> в полноэкранной версии<?endif;?> мы предложили эскизный вид, который позволит увидеть цельную картину сочетания цветов, подобрать наиболее подходящий.
         </p>
-<?
-    $detect = new Mobile_Detect;$PC=1;
-    if($detect->isMobile() || $detect->isTablet()) $PC=0;
+        <p class="noMobScr">Страница интерактивного хроматического круга временно доступна только на устройствах с большим разрешением.</p>
 
-    if( $PC==0 && $USER->GetID()!=1 ){
-        echo "<p>Страница интерактивного хроматического круга временно доступна только на полноэранных устройствах.</p>";
-    }else{
+<?
+
+
         if($PC==1){
             $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/include/cromcircle/circle.js");
             $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/include/cromcircle/circle_color.css");
@@ -52,7 +52,7 @@ $APPLICATION->SetPageProperty("description", "Хроматический круг, это онлайн под
         }
 
         $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/cromcircle/circle.php",array("PC"=>$PC));
-    }
+
 
 ?>
     </div>

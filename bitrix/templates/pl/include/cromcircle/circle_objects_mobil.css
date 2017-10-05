@@ -40,7 +40,7 @@
 .check_gamma {
     position: relative;
     /* top: 640px; */
-    left: 130px;
+    left: 30px;
     float: right;
     width: 50%;
 }
@@ -274,8 +274,8 @@
 }
 
 #rotColor2 {
-    position: relative;
-    left: -133px;
+    position: absolute;
+    left: 0;
     top: 210px;
 }
 
@@ -329,10 +329,10 @@
 
 .gamma-help {
     position: absolute;
-    width: 270px;
-    left: -263px;
+    width: 240px;
+    left: -3px;
     z-index: 99999;
-    top: 14px;
+    top: 84px;
     color: #ffffff;
     height: 90px;
     display: none;
@@ -344,18 +344,15 @@
 .gamma-help-text {
     font-family: 'Gunny Rewritten';
     font-size: 160%;
-    /* float: right; */
-    width: 220px;
-    line-height: 90%;
+    float: right;
 
 }
 .gamma-help .fa.fa-share.str {
-    transform: rotate(61deg);
+    transform: rotate(-113deg);
     font-size: 190%;
     position: relative;
-    top: -18px;
-    left: 212px;
-    /*color: gray;*/
+    top: -12px;
+    left: -8px;
 }
 
 .cBox-help {
@@ -363,7 +360,7 @@
     width: 300px;
     left: 95px;
     z-index: 99999;
-    top: -170px;
+    top: -186px;
     color: #ffffff;
     height: 160px;
     display: none;
@@ -388,4 +385,29 @@
     top: 60%;
     left: 0%;
     /* color: gray; */
+}
+
+.noMobScr {
+    display: none;
+}
+.noteRevert {
+    display: none;
+}
+
+@media handheld, only screen and (max-width: 660px) {
+    .noMobScr {
+        display: block;
+    }
+    .full-width-circle {
+        display: none;
+    }
+    .entry-content {
+        min-height: auto;
+    }
+    @media handheld, only screen and (min-height: 660px) {
+        .noteRevert {
+            display: block;
+        }
+    }
+
 }
