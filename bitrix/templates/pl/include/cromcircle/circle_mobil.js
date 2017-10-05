@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     arColor = {
         xp:{//zone x>0
             tg175:{//tg>1.75 - red

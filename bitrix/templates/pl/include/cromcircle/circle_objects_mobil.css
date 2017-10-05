@@ -394,7 +394,7 @@
     display: none;
 }
 
-@media handheld, only screen and (max-width: 660px) {
+@media handheld, only screen and (max-width: 639px) {
     .noMobScr {
         display: block;
     }
@@ -404,10 +404,21 @@
     .entry-content {
         min-height: auto;
     }
-    @media handheld, only screen and (min-height: 660px) {
-        .noteRevert {
-            display: block;
-        }
-    }
-
 }
+@media handheld, only screen and (min-height: 635px) {
+        .noteRevert {
+            display: block ! important;
+            /*position: fixed;*/
+            /*width: 170px;*/
+            /*height: 70px;*/
+            /*background-color: rgba(211, 211, 211, 0.7);*/
+            /*box-shadow: 0 0 10px 5px rgba(211, 211, 211, 0.7);*/
+            /*border-radius: 15px;*/
+            /*top: 50%;*/
+            /*left: 50%;*/
+            /*margin-left: -85px;*/
+            /*margin-top: -35px;*/
+            /*padding: 20px;*/
+        }
+}
+
