@@ -273,18 +273,18 @@ $(document).ready(function() {
         }else{
             $('.noteRevert').css('display', 'none');
         }
-        if($('.full-width-circle:visible').length>0){
-            $('.dragP1').css('top','190px');
-            $('.dragP1').css('left','330px');
-            console.log(xG+", "+tgG);
-            setTimeout(function(){
-                var modX=xG/Math.sqrt(xG*xG);
-                getColor(modX,tgG,rG,'#colorP1');
-
-                posCoPoints();
-                colorInImg();
-            },300);
-        }
+//        if($('.full-width-circle:visible').length>0){
+//            $('.dragP1').css('top','190px');
+//            $('.dragP1').css('left','330px');
+//            console.log(xG+", "+tgG);
+//            setTimeout(function(){
+//                var modX=xG/Math.sqrt(xG*xG);
+//                getColor(modX,tgG,rG,'#colorP1');
+//
+//                posCoPoints();
+//                colorInImg();
+//            },300);
+//        }
 
     });
 
