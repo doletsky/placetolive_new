@@ -361,7 +361,7 @@
 .cBox-help {
     position: absolute;
     width: 300px;
-    left: 95px;
+    left: 35px;
     z-index: 99999;
     top: -170px;
     color: #ffffff;
@@ -388,4 +388,8 @@
     top: 60%;
     left: 0%;
     /* color: gray; */
+}
+
+.entry-content {
+    min-height: 950px;
 }
