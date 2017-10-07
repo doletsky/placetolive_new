@@ -146,7 +146,7 @@
         </div>
 
     </div>
-    <div class="colorPBox">
+    <div class="colorPBox"><a name="colorpbox"></a>
         <div class="cBox-help active-help">
             <div class="cBox-help-text">Нажмите, чтобы поменять основной или дополнительные цвета между собой.</div>
             <div class="fa fa-mail-reply str"></div>
