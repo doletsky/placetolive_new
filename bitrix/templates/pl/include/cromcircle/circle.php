@@ -4,7 +4,7 @@
     <div class="circle col-1-2">
         <div class="circle-pos">
             <div class="circle-help active-help">
-                <div class="circle-help-text">Перемещайте мышкой эту плашку для выбора основного цвета</div>
+                <div class="circle-help-text">Перемещайте<?if($PC==1):?> мышкой<?endif?> эту плашку для выбора основного цвета</div>
                 <div class="fa fa-mail-reply str"></div>
             </div>
             <div class="container">

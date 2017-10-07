@@ -60,6 +60,14 @@
     top: 190px;
     left: 330px;
 }
+.dragP1 {
+    width: 30px;
+    height: 30px;
+    border: 12px solid #ffffff;
+    border-radius: 15px;
+    margin-left: -11px;
+    margin-top: -11px;
+}
 .dragP2{
     display: none;
     border: 2px solid #FFFFFF;

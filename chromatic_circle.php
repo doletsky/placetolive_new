@@ -38,7 +38,7 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
         </p>
         <?if($PC!=1):?>
         <p class="noMobScr">—траница интерактивного хроматического круга временно доступна только на устройствах с большим разрешением.</p>
-        <div class="noteRevert">ѕоверни на 90<sup>0</sup></div>
+        <div class="noteRevert">ѕоверните устройство на 90<sup>0</sup></div>
         <?endif?>
 
 <?
