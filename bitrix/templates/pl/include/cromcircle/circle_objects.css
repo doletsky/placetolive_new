@@ -390,6 +390,7 @@
     /* color: gray; */
 }
 
-.entry-content {
+.entry-content.first-box {
     min-height: 950px;
+    margin-bottom: 100px;
 }

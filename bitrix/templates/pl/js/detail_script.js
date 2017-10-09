@@ -37,7 +37,7 @@ setTimeout(function(){
     $(this).children('.subtitle-img').css('margin-top',imgHeight+'px');
     $(this).children('.subtitle-img').css('text-align','center');
     });
-cSoc=$('.social').offset().top;
+if($('.social').length>0) cSoc=$('.social').offset().top;
 }, 5000);
 setTimeout(function(){
     fImgH=0;

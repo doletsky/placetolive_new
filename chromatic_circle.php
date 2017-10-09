@@ -32,7 +32,7 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
     </div>
 
     <article id="post-25" class="post-25 page type-page status-publish has-post-thumbnail hentry">
-    <div class="entry-content">
+    <div class="entry-content first-box">
         <p>
             ’роматичеcкий круг Ч это онлайн сервис подбора цветовой гаммы дл€ интерьера, вариантов сочетани€ цветов. ƒл€ общего представлени€<?if($PC==0):?> в полноэкранной версии<?endif;?> мы предложили эскизный вид, который позволит увидеть цельную картину сочетани€ цветов, подобрать наиболее подход€щий.
         </p>
@@ -62,6 +62,8 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
         <!-- .entry-content -->
 
     </article>
+        <?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/rand-art.php", array("REQUIRED_ID"=>"531"));
+        $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/detail_script.js");?>
     </main><!-- #main -->
     </div><!-- #primary -->
     </div>

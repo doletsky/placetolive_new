@@ -5,6 +5,14 @@ $arFilter = Array(
     "IBLOCK_CODE"=>'articles',
     "ACTIVE"=>"Y"
 );
+if($REQUIRED_ID>0){
+    $arFilter["!ID"]=$REQUIRED_ID;
+    $resOne = CIBlockElement::GetByID($REQUIRED_ID);
+    if($ar_resOne = $resOne->GetNext()){
+        $arResult['RAND_ELEMENT'][] = array("NAME" => $ar_resOne["NAME"], "PREVIEW_PICTURE" => CFile::GetPath($ar_resOne["PREVIEW_PICTURE"]), "DETAIL_PAGE_URL" => $ar_resOne["DETAIL_PAGE_URL"]) ;
+    }
+}
+
 $res = CIBlockElement::GetList(Array("RAND"=>"ASC"), $arFilter, false, Array ("nTopCount" => 3));
 while($ar_fields = $res->GetNext())
 {
@@ -17,7 +25,8 @@ while($ar_fields = $res->GetNext())
 
             <div class="grid grid-pad">
 
-                <?foreach($arResult['RAND_ELEMENT'] as $k=>$el):?>
+                <?$i=0;
+                foreach($arResult['RAND_ELEMENT'] as $k=>$el):$i++;?>
                     <div class="col-1-3 mt-column-clear" style="padding: 5px">
                         <div class="project-box">
                             <a href="<?=$el["DETAIL_PAGE_URL"]?>">
@@ -34,7 +43,7 @@ while($ar_fields = $res->GetNext())
                             </a>
                         </div>
                     </div>
-                <?endforeach?>
+                <?if($i>2) break;endforeach?>
 
             </div>
         </section>

@@ -266,6 +266,14 @@ $(document).ready(function() {
         $('.noteRevert').css('display', 'block');
     }
     $(window).on('resize',function(){
+        $(".project-bg img").each(function(){
+            $(this).css('width',$(this).parent().width());
+            if($(this).parent().height()-$(this).height()>1){
+                $(this).css('max-height', 'unset');
+                $(this).css('width','auto');
+                $(this).css('height',$(this).parents('.project-content').height()+'px');
+            }
+        });
         scrH=screen.height;
         scrW=screen.width
 
@@ -279,6 +287,7 @@ $(document).ready(function() {
                 $('.dragP1').css('top','190px');
             $('.dragP1').css('left','330px');
                 position($("#dragP1"));
+
             }
         }
 
