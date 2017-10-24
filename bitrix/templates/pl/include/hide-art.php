@@ -35,7 +35,7 @@ if($ar_fields = $res->GetNext())
     }
     $ar_fields["PHOTOS"]=$VALUES;
 
-    if($ar_fields["ID"]>507){
+    if($ar_fields["ID"]>507 || $ar_fields['PROPERTY_NEW_TMP_VALUE']==1){
         $nDETAIL_TEXT=explode("\n", strip_tags($ar_fields["DETAIL_TEXT"]));
         $arSearch=array(
             '[h]',
