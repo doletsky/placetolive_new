@@ -42,14 +42,15 @@
                         <!-- .entry-content -->
 
                             <div class="social">
-                                <?if($USER->GetID()==1):?>
-                                    <div class="fb-like" data-href="http://placetolive.ru/<?=$APPLICATION->GetCurDir();?>" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
-                                <?endif?>
+
+                                    <div class="fb-like" data-href="http://placetolive.ru/<?=$APPLICATION->GetCurDir();?>" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true" data-ref="site_fb_like"></div>
+                                <?if(0):?>
                                 <span>Поделиться статьей: </span>
                                 <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://<?=$_SERVER['SERVER_NAME']?><?=$APPLICATION->GetCurPage()?>">
                                     <i class="fa fa-facebook"></i> </a>
                                 <a target="_blank" href="https://vk.com/share.php?url=http://<?=$_SERVER['SERVER_NAME']?>/<?=$APPLICATION->GetCurPage()?>" >
                                     <i class="fa fa-vk"></i> </a>
+                                <?endif?>
                             </div>
                     </article><!-- #post-## -->
 
