@@ -1,5 +1,12 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.10';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 <header class="page-entry-header">
     <div class="grid grid-pad overflow">
         <div class="col-1-1">
@@ -35,6 +42,9 @@
                         <!-- .entry-content -->
 
                             <div class="social">
+                                <?if($USER->GetID()==1):?>
+                                    <div class="fb-like" data-href="http://placetolive.ru/<?=$APPLICATION->GetCurDir();?>" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+                                <?endif?>
                                 <span>Поделиться статьей: </span>
                                 <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://<?=$_SERVER['SERVER_NAME']?><?=$APPLICATION->GetCurPage()?>">
                                     <i class="fa fa-facebook"></i> </a>

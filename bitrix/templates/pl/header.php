@@ -9,6 +9,7 @@ IncludeTemplateLangFile(__FILE__);
 
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="yandex-verification" content="6183942b3fb1d3f5" />
+    <meta name="p:domain_verify" content="05f134924c6e444d920c96619f8f5dcb"/>
     <meta property="og:url" content="http://<?=$_SERVER['SERVER_NAME']?><?=$APPLICATION->GetCurDir();?>" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="<?$APPLICATION->ShowTitle()?>" />
