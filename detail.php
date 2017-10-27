@@ -4,7 +4,7 @@ if(substr_count($_SERVER["REQUEST_URI"],"?")>0) LocalRedirect($APPLICATION->GetC
 //$APPLICATION->SetTitle("Title");
 ?>
         <!-- POST WITH IMAGE -->
-<?if($USER->GetID()!=1 && in_array("1", $USER->GetUserGroupArray())){
+<?if($USER->GetID()!=1000 && in_array("1", $USER->GetUserGroupArray())){
     $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/include/hide-art.php", array("CODE"=>$_REQUEST["CODE"]));
 }else{
     $APPLICATION->IncludeComponent("bitrix:news.detail","pl",Array(

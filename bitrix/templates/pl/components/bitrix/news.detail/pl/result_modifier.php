@@ -77,9 +77,9 @@ if($arResult["ID"]>507 || $arResult['DISPLAY_PROPERTIES']['NEW_TMP']['VALUE']==1
     foreach($arResult['DISPLAY_PROPERTIES']['PHOTOS']['FILE_VALUE'] as $num=>$pPhoto){
         $arSearch[]='_'.(1+$num).']';
         if(strlen($pPhoto['DESCRIPTION'])>2)
-        $arReplace[]='src="'.$pPhoto['SRC'].'" alt="'.$pPhoto['DESCRIPTION'].'"><div class="subtitle-img">'.$pPhoto['DESCRIPTION'].'</div></div>';
+        $arReplace[]='src="'.$pPhoto['SRC'].'" alt="'.str_replace('"','&quot;',$pPhoto['DESCRIPTION']).'" data-pin-description="'.str_replace('"','&quot;',$pPhoto['DESCRIPTION']).'"><div class="subtitle-img">'.str_replace('"','&quot;',$pPhoto['DESCRIPTION']).'</div></div>';
         else
-            $arReplace[]='src="'.$pPhoto['SRC'].'" alt="'.$arResult['NAME'].'"></div>';
+            $arReplace[]='src="'.$pPhoto['SRC'].'" alt="'.str_replace('"','&quot;',$arResult['NAME']).'" data-pin-description="'.str_replace('"','&quot;',$arResult['NAME']).'"></div>';
     }
     $arTmp=array();
     foreach($nDETAIL_TEXT as $str){

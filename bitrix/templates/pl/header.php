@@ -30,7 +30,7 @@ IncludeTemplateLangFile(__FILE__);
     <?$APPLICATION->ShowCSS();?>
 
     <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.ui.touch-punch.min.js");?>
-
+    <script async defer src="//assets.pinterest.com/js/pinit.js" data-pin-hover="true"></script>
     <style>
         #secondary > #mt-testimonials .testimonial p, .shortcodes .testimonial p  { font-style: italic; }
         .news-info > div { text-align: left; }
@@ -41,6 +41,67 @@ IncludeTemplateLangFile(__FILE__);
 </head>
 
 <body class="home page-template page-template-template-home page-template-template-home-php page page-id-352">
+<?if (!$USER->IsAdmin()):?>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter44799454 = new Ya.Metrika({
+                        id:44799454,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/44799454" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-100077242-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+<?endif;?>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '522962684704330',
+            xfbml      : true,
+            version    : 'v2.10'
+        });
+
+        FB.AppEvents.logPageView();
+
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <?global $USER; if($USER->GetID()==1)$APPLICATION->ShowPanel();?>
 <div id="page" class="hfeed site">
 
