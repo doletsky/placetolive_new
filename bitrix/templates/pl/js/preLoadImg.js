@@ -10,17 +10,20 @@ $(document).ready(function(){
                 reader.onloadend = function (e) {
                     var img = document.createElement('img');
                     img.setAttribute('src', $('#img-preview').attr('src'));
-                    var vibrant = new Vibrant(img, 128, 2);
-                    var swatches = vibrant.swatches();
-                    var i=0;
                     var hColPallet=$('#img-preview').outerHeight()/5;
-                    $('.colPallet').css('height', hColPallet+'px');
-                    for (swatch in swatches)
-                        if (swatches.hasOwnProperty(swatch) && swatches[swatch]){
-                            $('.colPallet:eq('+i+')').css('background-color', swatches[swatch].getHex());
-                            i++;
-                            console.log(swatch, swatches[swatch].getHex());
-                        }
+                    for(var j=1;j<6;j++){
+                        var vibrant = new Vibrant(img, 256, j);
+                        var swatches = vibrant.swatches();
+                        var i=0;
+                        $('.colPallet').css('height', hColPallet+'px');
+                        for (swatch in swatches)
+                            if (swatches.hasOwnProperty(swatch) && swatches[swatch]){
+                                $('.pt'+j+' .colPallet:eq('+i+')').css('background-color', swatches[swatch].getHex());
+                                i++;
+                                console.log(swatch, swatches[swatch].getHex());
+                            }
+                    }
+
 
                 }
                 reader.readAsDataURL(input.files[0]);
