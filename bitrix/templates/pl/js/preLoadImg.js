@@ -28,7 +28,7 @@ $(document).ready(function(){
                                 if(flag==1){arCPallet[arCPallet.length]=swatches[swatch].getHex();}
                                 $('.pt'+j+' .colPallet:eq('+i+')').css('background-color', swatches[swatch].getHex());
                                 i++;
-                                console.log(swatch, swatches[swatch].getHex());
+                                console.log(swatch, swatches[swatch].getRgb());
                             }
                     }
                     console.log(arCPallet);
