@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-
+$APPLICATION->SetTitle('Палитра изображения');
+$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/html2canvas.js");
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/Vibrant.js");
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/preLoadImg.js");
 require_once($_SERVER["DOCUMENT_ROOT"].SITE_TEMPLATE_PATH."/include/Mobile_Detect.php");
@@ -10,6 +11,30 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
 <style>
     .colPallet{
         width: 100px;height: 10px;float: left;
+    }
+    .input_box input[type="button"]{
+        border: 0px;
+    }
+    input[type="file"]::-webkit-file-upload-button {
+        font-family: 'Montserrat',Helvetica Neue,Helvetica,arial,sans-serif;
+        border: 1px solid;
+        border-color: #111;
+        border-radius: 3px;
+        background: #111;
+        box-shadow: none;
+        color: #FFF !important;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        line-height: 1;
+        text-transform: uppercase;
+        padding: 1.25em 2.5em;
+        text-shadow: none;
+        cursor: pointer;
+    }
+    .screenshot{
+        cursor: pointer;
+        display: none;
     }
 </style>
     <header class="page-entry-header">
@@ -37,13 +62,13 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
 <article id="post-25" class="post-25 page type-page status-publish has-post-thumbnail hentry">
     <div class="entry-content first-box">
     <p>
-<!--        Хроматичеcкий круг — это онлайн сервис подбора цветовой гаммы для интерьера, вариантов сочетания цветов. Для общего представления--><?//if($PC==0):?><!-- в полноэкранной версии--><?//endif;?><!-- мы предложили эскизный вид, который позволит увидеть цельную картину сочетания цветов, подобрать наиболее подходящий.-->
+        Палитра изображения — это онлайн сервис для получения основных цветов изображения.
     </p>
     <?if($PC!=1):?>
-        <p class="noMobScr">Страница получения палитры из картинки временно доступна только на устройствах с большим разрешением.</p>
+        <p class="noMobScr">Страница получения палитры из изображения временно не доступна на мобильных устройствах.</p>
     <?endif?>
     <form id="form" action="" method="post" enctype="multipart/form-data" style="position: relative" class="form_cpallet">
-        <div>
+        <div class="input_box" style="margin-bottom: 10px">
             <input type="file" id="img" multiple accept="image/*" name="img"/>
         </div>
         <div class="main_cpallet" style="width: 1100px;position: absolute;left: 50%">
@@ -51,8 +76,7 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
             <div class="pt1" style="height: 50px;float: left;">
             </div>
             <div style="clear: both"></div>
-            <br />
-            <a href="#" id="reset-img-preview">удалить изображения</a>
+            <div class="screenshot">Сохранить с палитрой</div>
         </div>
     </form>
     </div>

@@ -61,7 +61,7 @@ $(document).ready(function(){
                         var l=Math.ceil(arCPallet.length/5)+n;
                         $('.colPallet:eq('+l+')').css('height', 2*hColPallet+'px');
                     }
-
+                    $('.screenshot').css('display','block');
                 }
                 reader.readAsDataURL(input.files[0]);
 
@@ -73,12 +73,33 @@ $(document).ready(function(){
         }
     });
 
-    $('#reset-img-preview').click(function() {
-        $('#img').val('');
-        $('#img-preview').attr('src', 'default-preview.jpg');
+    //сделать скриншот
+    $('.screenshot').click(function(){
+        $('.screenshot').css('display','none');
+        html2canvas($('.main_cpallet'), //селектор, который надо заскринить
+            {
+                //размеры, если надо
+                // width: 2500,
+                // height: 500,
+                onrendered: function (canvas) {
+                    document.body.appendChild(canvas);
+                    //после того, как сформировался канвас, копируем ссылку изображения и сохраняем файл
+                    screenShot();
+                    $('.screenshot').css('display','block');
+                }
+            });
     });
 
-    $('#form').bind('reset', function () {
-        $('#img-preview').attr('src', 'default-preview.jpg');
-    });
+
+    //делаем скрин
+    function screenShot()
+    {
+        var canvas = $('canvas')[0];
+        var data = canvas.toDataURL('image/png').replace(/data:image\/png;base64,/, '');
+        $('canvas').remove();
+        $.post('screenshot.php',{data:data}, function(rep){
+            alert('Изображение '+rep+' сохранено' );
+        });
+    }
+
 });
