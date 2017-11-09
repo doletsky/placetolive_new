@@ -95,11 +95,16 @@ $(document).ready(function(){
     function screenShot()
     {
         var canvas = $('canvas')[0];
-        var data = canvas.toDataURL('image/png').replace(/data:image\/png;base64,/, '');
+        var data = canvas.toDataURL('image/png');//.replace(/data:image\/png;base64,/, '');
         $('canvas').remove();
-        $.post('screenshot.php',{data:data}, function(rep){
-            alert('Изображение '+rep+' сохранено' );
-        });
+        var link = document.createElement('a');
+        link.setAttribute('href',data);
+        link.setAttribute('download','download');
+        onload=link.click();
+
+//        $.post('screenshot.php',{data:data}, function(rep){
+//            alert('Изображение '+rep+' сохранено' );
+//        });
     }
 
 });

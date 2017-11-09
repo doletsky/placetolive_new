@@ -66,7 +66,7 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
     </p>
     <?if($PC!=1):?>
         <p class="noMobScr">Страница получения палитры из изображения временно не доступна на мобильных устройствах.</p>
-    <?endif?>
+    <?else:?>
     <form id="form" action="" method="post" enctype="multipart/form-data" style="position: relative" class="form_cpallet">
         <div class="input_box" style="margin-bottom: 10px">
             <input type="file" id="img" multiple accept="image/*" name="img"/>
@@ -79,6 +79,7 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
             <div class="screenshot">Сохранить с палитрой</div>
         </div>
     </form>
+        <?endif?>
     </div>
     <!-- .entry-content -->
 
