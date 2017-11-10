@@ -20,9 +20,9 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
         border: 1px solid;
         border-color: #111;
         border-radius: 3px;
-        background: #111;
+        background: #fff;
         box-shadow: none;
-        color: #FFF !important;
+        /*color: #FFF !important;*/
         font-size: 11px;
         font-weight: 700;
         letter-spacing: 0.1em;
@@ -31,6 +31,7 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
         padding: 1.25em 2.5em;
         text-shadow: none;
         cursor: pointer;
+        margin-left: -20px;
     }
     .screenshot{
         cursor: pointer;
@@ -69,7 +70,7 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
     <?else:?>
     <form id="form" action="" method="post" enctype="multipart/form-data" class="form_cpallet">
         <div class="input_box" style="margin-bottom: 10px">
-            <input type="file" id="img" multiple accept="image/*" name="img"/>
+            <input type="file" id="img" accept="image/*" name="img" style="padding-left: 20px"/>
         </div>
         <div class="main_cpallet" style="width: 1100px;position: absolute;left: 50%">
             <img id="img-preview" style="width: 600px;float: left" />
