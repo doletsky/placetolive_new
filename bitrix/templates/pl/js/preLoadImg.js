@@ -11,35 +11,31 @@ $(document).ready(function(){
                     var img = document.createElement('img');
                     img.setAttribute('src', $('#img-preview').attr('src'));
                     $(".pt1").html('');
+                    $("#debug").html('');
                     $(".form_cpallet").css("height",(110+$('#img-preview').outerHeight())+"px")
                     var hColPallet=$('#img-preview').outerHeight()/5;
+
                     var arCPallet=[];
                     var flag=1;
-                    for(var j=1;j<6;j++){
-                        var vibrant = new Vibrant(img, 128, j);
-                        var swatches = vibrant.swatches();
-                        var i=0;
-                        $('.colPallet').css('height', hColPallet+'px');
-                        for (swatch in swatches)
-
-                            if (swatches.hasOwnProperty(swatch) && swatches[swatch]){
-                                flag=1;
-                                for(var k=0;k<arCPallet.length;k++){
-                                    var rgb=swatches[swatch].getRgb();
-                                    if(arCPallet.length>0 && Math.abs(arCPallet[k][1][0]-rgb[0])<10 && Math.abs(arCPallet[k][1][1]-rgb[1])<10 && Math.abs(arCPallet[k][1][2]-rgb[2])<10) flag=0;
-                                }
-                                if(flag==1){
-                                    arCPallet[arCPallet.length]=[swatches[swatch].getHex(),swatches[swatch].getRgb()];
-                                }
-//                                $('.pt'+j+' .colPallet:eq('+i+')').css('background-color', swatches[swatch].getHex());
-                                i++;
-                            }
+                    var vibrant = new Vibrant(img, 256, 5);
+                    var swatches = vibrant._swatches;
+                    $('.colPallet').css('height', hColPallet+'px');
+                    for(var m in swatches){
+                        flag=1;
+                        for(var k=0;k<arCPallet.length;k++){
+                            var rgb=swatches[m]['rgb'];
+                            if(arCPallet.length>0 && Math.abs(arCPallet[k][1][0]-rgb[0])<20 && Math.abs(arCPallet[k][1][1]-rgb[1])<16 && Math.abs(arCPallet[k][1][2]-rgb[2])<30) flag=0;
+                        }
+                        if(flag==1){
+                            arCPallet[arCPallet.length]=['rgb('+swatches[m]['rgb'].join()+')',swatches[m]['rgb']];
+                        }
+                        if(arCPallet.length>24)break;
                     }
+
 
                     var bColPallet=0;// колич. увеличивыаемых элементов
                     var wPt1=Math.ceil(arCPallet.length/5)*100;
                     var ost=arCPallet.length/Math.ceil(arCPallet.length/5)-Math.ceil(arCPallet.length/Math.ceil(arCPallet.length/5));
-                    console.log(Math.ceil(arCPallet.length/5)*5-arCPallet.length);
                     if(ost==0 ){
                         hColPallet=$('#img-preview').outerHeight()/(arCPallet.length/Math.ceil(arCPallet.length/5));
                     }
