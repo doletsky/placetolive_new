@@ -33,9 +33,28 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
         cursor: pointer;
         margin-left: -20px;
     }
+    input[type="file"]::-webkit-file-upload-button:focus {
+        outline: 0;
+    }
     .screenshot{
         cursor: pointer;
         display: none;
+        background-color: #fff;
+        width: 280px;
+        font-family: 'Montserrat',Helvetica Neue,Helvetica,arial,sans-serif;
+        border: 1px solid;
+        border-color: #111;
+        border-radius: 3px;
+        background: #fff;
+        box-shadow: none;
+        color: #000;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        line-height: 1;
+        text-transform: uppercase;
+        padding: 1.25em 2.5em;
+        text-shadow: none;
     }
 </style>
     <header class="page-entry-header">
@@ -68,18 +87,20 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
     <?if($PC!=1):?>
         <p class="noMobScr">—траница получени€ палитры из изображени€ временно не доступна на мобильных устройствах.</p>
     <?else:?>
-    <form id="form" action="" method="post" enctype="multipart/form-data" class="form_cpallet">
+    <form id="form" action="" method="post" enctype="multipart/form-data" class="form_cpallet" style="height: 240px">
         <div class="input_box" style="margin-bottom: 10px">
-            <input type="file" id="img" accept="image/*" name="img" style="padding-left: 20px"/>
+            <input type="file" id="img" accept="image/*" name="img" style="padding-left: 20px;margin-bottom: 15px"/>
         </div>
-        <div class="main_cpallet" style="width: 1100px;position: absolute;left: 50%">
-            <img id="img-preview" style="width: 600px;float: left" />
+        <div class="main_cpallet" style="width: 1100px;position: absolute;left: 50%;margin-left: -107px">
+            <img id="img-preview" style="width: 600px; float: left"/>
             <div class="pt1" style="height: 50px;float: left;">
             </div>
             <div style="clear: both"></div>
-            <div class="screenshot">—охранить с палитрой</div>
+
         </div>
+
     </form>
+        <div class="screenshot">—качать картинку с палитрой</div>
         <div id="debug" style="display: none">
 
         </div>
