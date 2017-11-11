@@ -56,6 +56,13 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
         padding: 1.25em 2.5em;
         text-shadow: none;
     }
+    .wmark {
+        color: #fff;
+        font-family: 'Gunny Rewritten';
+        font-size: 20px;
+        padding-left: 5px;
+        padding-top: 30px;
+    }
 </style>
     <header class="page-entry-header">
         <div class="grid grid-pad overflow">

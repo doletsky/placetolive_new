@@ -65,6 +65,8 @@ $(document).ready(function(){
                             var l=Math.ceil(arCPallet.length/5)+n;
                             $('.colPallet:eq('+l+')').css('height', 2*hColPallet+'px');
                         }
+                        $('.colPallet:eq(20)').addClass('wmark');
+                        $('.wmark').html('Placetolive.ru');
                         $('.screenshot').css('display','block');
                     }
                     reader.readAsDataURL(input.files[0]);
