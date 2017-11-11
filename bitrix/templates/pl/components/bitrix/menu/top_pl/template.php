@@ -13,9 +13,10 @@
                     <?endforeach?>
                 </ul>
             </li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Сервис</a>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Сервисы</a>
                 <ul class="sub-menu">
                         <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/chromatic_circle.php">Хроматический круг</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/colors_image/">Палитра цветов</a></li>
                 </ul>
             </li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/search.php">Найти</a></li>

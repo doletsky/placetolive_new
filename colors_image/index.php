@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle('Палитра изображения');
+$APPLICATION->SetTitle('Палитра цветов');
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/html2canvas.js");
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/Vibrant.js");
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/preLoadImg.js");
@@ -72,7 +72,7 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
                 </div>
             </div>
         </div>
-        <div class="page-bg-image" data-parallax="scroll" data-image-src="<?=SITE_TEMPLATE_PATH."/images/krug_23.jpg"?>" data-z-index="1">
+        <div class="page-bg-image" data-parallax="scroll" data-image-src="<?=SITE_TEMPLATE_PATH."/images/babilon_pallet.png"?>" data-z-index="1">
         </div>
     </header>
 <section id="page-content-container" class="animated fadeIn delay-2">
@@ -89,7 +89,7 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
 <article id="post-25" class="post-25 page type-page status-publish has-post-thumbnail hentry">
     <div class="entry-content first-box">
     <p>
-        Палитра изображения — это онлайн сервис для получения основных цветов изображения.
+        Палитра цветов — это онлайн сервис для получения основных цветов изображения.
     </p>
     <?if($PC!=1):?>
         <p class="noMobScr">Страница получения палитры из изображения временно не доступна на мобильных устройствах.</p>
