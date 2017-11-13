@@ -1,6 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle('ѕалитра цветов');
+$APPLICATION->SetPageProperty("keywords", "палитра цветов, палитра фото, палитра изображени€, палитра картинки, палитра онлайн, палитра цветов из изображени€, основные цвета картинки, основные цвета картины, палитра он-лайн");
+$APPLICATION->SetPageProperty("description", "ѕалитра цветов Ч онлайн сервис дл€ получени€ основных цветов любого изображени€ (фото, картинки).");
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/html2canvas.js");
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/Vibrant.js");
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/preLoadImg.js");
