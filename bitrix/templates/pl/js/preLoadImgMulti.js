@@ -2,19 +2,39 @@ $(document).ready(function(){
     $('#img').change(function () {
 
             var input = $(this)[0];
-            var num=0;
-            if (input.files)
-                $.each(input.files, function(i, file) {
-                    num++;
-                console.log('num: '+num, i, file);
-                if( file) {
-                    if (file.type.match('image.*')) {
-                        var reader = new FileReader();
-                        reader.onload = function (e) {
-                            $('.img'+num+' #img-preview').css('display','block');
-                            $('.img'+num+' #img-preview').attr('src', e.target.result);
-//                            console.log(e);
-                        }
+        for (var i = 0, f; f = input.files[i]; i++) {
+            // Only process image files.
+            if (!f.type.match('image.*')) {
+                alert("Image only please....");
+            }
+            var reader = new FileReader();
+            // Closure to capture the file information.
+            reader.onload = (function (theFile) {
+                return function (e) {
+                    console.log(e);
+                    $('.img'+i+' #img-preview').css('display','block');
+                    $('.img'+i+' #img-preview').attr('src', e.target.result);
+                    // Render thumbnail.
+//                    var span = document.createElement('span');
+//                    span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+//                    document.getElementById('output').insertBefore(span, null);
+                };
+            })(f);
+            // Read in the image file as a data URL.
+            reader.readAsDataURL(f);
+        }
+//            var num=0;
+//            if (input.files){
+//                var reader = new FileReader();
+//                for(var num=0; num<input.files.length; num++) {
+//                    console.log(input.files.length, 'num: '+num, input.files[num]);
+//
+//
+//                            reader.onload = function (e) {
+//                                $('.img'+num+' #img-preview').css('display','block');
+//                                $('.img'+num+' #img-preview').attr('src', e.target.result);
+//                                console.log(e);
+//                            }
 //                    reader.onloadend = function (e) {
 //
 //
@@ -76,15 +96,14 @@ $(document).ready(function(){
 //                        $('.img'+num+' .wmark').html('Placetolive.ru');
 //                        $('.img'+num+' .screenshot').css('display','block');
 //                    }
-                        reader.readAsDataURL(file);
 
-                    } else {
-                        console.log('ошибка, не изображение');
-                    }
-                } else {
-                    console.log('хьюстон у нас проблема');
-                }
-            });
+
+//
+//                }
+//                reader.readAsDataURL(input.files[0]);
+//                reader.readAsDataURL(input.files[1]);
+//            }
+
 
 
     });
