@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('#img').change(function () {
-
+            $("img.loaded").remove();
             var input = $(this)[0];
         for (var i = 0, f; f = input.files[i]; i++) {
             // Only process image files.
@@ -11,15 +11,24 @@ $(document).ready(function(){
             // Closure to capture the file information.
             reader.onload = (function (theFile) {
                 return function (e) {
-                    console.log(e);
-                    $('.img'+i+' #img-preview').css('display','block');
-                    $('.img'+i+' #img-preview').attr('src', e.target.result);
+//                    $(".form_cpallet").append("<img class='loaded' width='600' src='"+e.target.result+"' >");
+                    $(".form_cpallet").append('<div class="main_cpallet loaded" style="width: 1100px;position: absolute;left: 50%;margin-left: -107px"><img id="img-preview" style="width: 600px; float: left" src="'+e.target.result+'"/><div class="pt1" style="height: 50px;float: left;"></div><div style="clear: both"></div></div>');
+//                    $('.img'+i+' #img-preview').css('display','block');
+//                    $('.img'+i+' #img-preview').attr('src', e.target.result);
                     // Render thumbnail.
 //                    var span = document.createElement('span');
 //                    span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
 //                    document.getElementById('output').insertBefore(span, null);
                 };
             })(f);
+            reader.onloadend = function (e) {
+                var hf=0;
+                $(".form_cpallet img").each(function(){
+                    hf=hf+$(this).height();
+                    console.log(hf);
+                });
+                $(".form_cpallet").css("height", hf+"px");
+            }
             // Read in the image file as a data URL.
             reader.readAsDataURL(f);
         }

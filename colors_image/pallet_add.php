@@ -100,20 +100,20 @@ if($detect->isMobile() || $detect->isTablet()) $PC=0;
         <div class="input_box" style="margin-bottom: 10px">
             <input type="file" id="img" multiple accept="image/*" name="img" style="padding-left: 20px;margin-bottom: 15px"/>
         </div>
-        <div class="main_cpallet img1" style="width: 1100px;position: absolute;left: 50%;margin-left: -107px">
-            <img id="img-preview" style="width: 600px; float: left"/>
-            <div class="pt1" style="height: 50px;float: left;">
-            </div>
-            <div style="clear: both"></div>
-
-        </div>
-        <div class="main_cpallet img2" style="width: 1100px;position: absolute;left: 50%;margin-left: -107px">
-            <img id="img-preview" style="width: 600px; float: left"/>
-            <div class="pt1" style="height: 50px;float: left;">
-            </div>
-            <div style="clear: both"></div>
-
-        </div>
+<!--        <div class="main_cpallet loaded" style="width: 1100px;position: absolute;left: 50%;margin-left: -107px">-->
+<!--            <img id="img-preview" style="width: 600px; float: left"/>-->
+<!--            <div class="pt1" style="height: 50px;float: left;">-->
+<!--            </div>-->
+<!--            <div style="clear: both"></div>-->
+<!---->
+<!--        </div>-->
+<!--        <div class="main_cpallet img2" style="width: 1100px;position: absolute;left: 50%;margin-left: -107px">-->
+<!--            <img id="img-preview" style="width: 600px; float: left"/>-->
+<!--            <div class="pt1" style="height: 50px;float: left;">-->
+<!--            </div>-->
+<!--            <div style="clear: both"></div>-->
+<!---->
+<!--        </div>-->
 
     </form>
         <div class="screenshot">Скачать картинку с палитрой</div>
