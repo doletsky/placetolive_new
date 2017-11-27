@@ -35,7 +35,7 @@ if(empty($_REQUEST) || array_key_exists('PAGEN_1', $_REQUEST)) LocalRedirect("/s
         "IBLOCK_TYPE" => "news",
         "IBLOCK_ID" => "34",
         "NEWS_COUNT" => "4",
-        "SORT_BY1" => "ACTIVE_FROM",
+        "SORT_BY1" => "show_counter",
         "SORT_ORDER1" => "DESC",
         "SORT_BY2" => "ID",
         "SORT_ORDER2" => "ASC",
